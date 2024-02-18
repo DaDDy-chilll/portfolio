@@ -1,12 +1,13 @@
-import MenuButton from "../menubutton/MenuButton.component"
+import { LOGO } from "assets"
+import Menu from "../menu/Menu.component"
 import { Nav } from "./Navbar.style"
 
 
 const Navbar = () => {
   return (
     <Nav>
-        <a href="/">Logo</a>
-        <MenuButton />
+        <a href="/"><LOGO /></a>
+        <Menu />
     </Nav>
   )
 }
