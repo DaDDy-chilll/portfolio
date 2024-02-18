@@ -1,11 +1,13 @@
 import { styled } from "styled-components";
 
 const Menuicon = styled.div`
-  width: 5%;
+  width: 20%;
   display: flex;
   justify-content: space-between;
   align-content: center;
   cursor: pointer;
+  transition: all .2s;
+  
 
   &:hover{
 
@@ -23,12 +25,18 @@ const Menuicon = styled.div`
     }
   }
 
+  &:active{
+    & > div {
+      border: 2px solid black;
+      background-color: white;
+    }
+  }
+
   div {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: black;
-
   }
   
 
