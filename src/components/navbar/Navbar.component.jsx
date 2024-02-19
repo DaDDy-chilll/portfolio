@@ -1,6 +1,7 @@
-import { LOGO } from "assets"
+import { LOGO } from "@assets"
 import Menu from "../menu/Menu.component"
-import { Nav } from "./Navbar.style"
+import { Nav } from "./NavBar.style"
+
 
 
 const Navbar = () => {

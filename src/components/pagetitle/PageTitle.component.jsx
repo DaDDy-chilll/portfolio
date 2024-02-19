@@ -1,16 +1,16 @@
 
-import { PageTitleTail, PageTitleHead} from "@assets";
+import { PageTitleTail, PageTitleHead} from "assets";
 import { Wrapper } from "./PageTitle.style";
-// eslint-disable-next-line react/prop-types
-const PageTitle = ({pageTitle}) => {
-  const words = Array.from([...pageTitle])
-  console.log(words);
- const height = (window.innerHeight / 2) / 2 ;
+
+const PageTitle = () => {
   return (
-    <Wrapper height={height}>
+    <Wrapper>
         <PageTitleTail />
         <span>
-          {words.map((w,i) =><p key={i}>{w}</p>)}
+          <p>h</p>
+          <p>o</p>
+          <p>m</p>
+          <p>e</p>
         </span>
         <PageTitleHead />
       </Wrapper>
