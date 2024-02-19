@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
 *{
   box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 body{
   margin: 0;
   overflow: hidden;
+=======
+>>>>>>> a94480289bed43863b03cdf874eab63bdef0b171
 }

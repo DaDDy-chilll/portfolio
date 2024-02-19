@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "public",
+=======
+  "name": "portfolio",
+>>>>>>> a94480289bed43863b03cdf874eab63bdef0b171
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +14,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@reduxjs/toolkit": "^2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.0",
+=======
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+>>>>>>> a94480289bed43863b03cdf874eab63bdef0b171
     "react-router-dom": "^6.22.1",
     "styled-components": "^6.1.8"
   },

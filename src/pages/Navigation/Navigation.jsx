@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {Outlet, useLocation} from 'react-router-dom'
 import { Navbar,PageTitle,PageNumber } from '@components'
 import { useDispatch, useSelector } from 'react-redux';
@@ -26,3 +27,20 @@ const Navigation = () => {
 }
 
 export default Navigation
+=======
+import { Outlet } from "react-router-dom";
+import { Navbar,PageTitle } from "components";
+
+
+const Navigation = () => {
+  return (
+    <>
+      <Navbar />
+      <PageTitle />
+      <Outlet />
+    </>
+  );
+};
+
+export default Navigation;
+>>>>>>> a94480289bed43863b03cdf874eab63bdef0b171
