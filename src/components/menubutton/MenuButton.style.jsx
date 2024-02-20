@@ -50,8 +50,5 @@ const Menuicon = styled.div`
   }
 `;
 
-<<<<<<< HEAD
 export { Menuicon };
-=======
-export { Menuicon };
->>>>>>> a94480289bed43863b03cdf874eab63bdef0b171
+

@@ -19,8 +19,5 @@ const Time = () => {
   return <Wrapper>{`${time}`}</Wrapper>;
 };
 
-<<<<<<< HEAD
 export default Time;
-=======
-export default Time;
->>>>>>> a94480289bed43863b03cdf874eab63bdef0b171
+

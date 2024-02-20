@@ -5,7 +5,7 @@ import { Number } from "./PageNumber.style"
 const PageNumber = ({pageNumber}) => {
     const windowWidth = (window.innerWidth / 2) - 20;
   return (
-    <Number windowwidth={windowWidth}>{`0${pageNumber}`}</Number>
+    <Number $windowwidth={windowWidth}>{`0${pageNumber}`}</Number>
   )
 }
 
