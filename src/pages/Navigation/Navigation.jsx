@@ -1,28 +1,13 @@
-import {Outlet, useLocation} from 'react-router-dom'
-import { Navbar,PageTitle,PageNumber } from '@components'
-import { useDispatch, useSelector } from 'react-redux';
-import { changeInfo } from '@store';
-import { useEffect } from 'react';
-
+import { Outlet } from "react-router-dom";
+import { Navbar } from "@components";
 
 const Navigation = () => {
-  const location = useLocation();
-  const dispatch = useDispatch()
-  const {pathname} = location
-  const {pageTitle,pageNumber} = useSelector(state => state.pageInfo)
-
-  useEffect(()=>{
-    dispatch(changeInfo(pathname))
-  },[pathname])
-
   return (
     <>
-        <Navbar />
-        <PageTitle pageTitle={pageTitle} />
-        <PageNumber  pageNumber={pageNumber} />
-        <Outlet />
+      <Navbar />
+      <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

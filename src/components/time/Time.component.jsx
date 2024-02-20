@@ -1,8 +1,10 @@
-import { useState } from "react";
+import {  useState } from "react";
 import { Wrapper } from "./Time.style";
+import { motion } from "framer-motion";
 
 const Time = () => {
   const [time, setTime] = useState("00:00");
+  setInterval(() => TimeChnage(), 1000);
   const TimeChnage = () => {
     let hr = new Date().getHours();
     let mins = new Date().getMinutes();
@@ -12,11 +14,11 @@ const Time = () => {
     if (hr < 10) hr = `0${hr}`;
     const time = `${hr}:${mins} ${newformat}`;
     setTime(time);
-  };
+  }
 
-  setInterval(() => TimeChnage(), 1000);
 
-  return <Wrapper>{`${time}`}</Wrapper>;
+
+  return <Wrapper as={motion.div} initial={{x:'500px'}} animate={{x:0}} transition={{delay:.1,type:'spring',stiffness:100}} >{`${time}`}</Wrapper>;
 };
 
 export default Time;

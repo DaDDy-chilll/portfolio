@@ -26,6 +26,7 @@ p{
     right: 2%;
     /* top:${props => props.height}px */
 height: calc(100% - 67px);
+overflow: hidden;
 
 `
 

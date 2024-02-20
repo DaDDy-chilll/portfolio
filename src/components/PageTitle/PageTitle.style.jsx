@@ -13,6 +13,7 @@ p{
     font-weight: bolder;
     font-size: 1.2rem;
     margin: 20% 0;
+    user-select: none;
 }
 
 
@@ -25,6 +26,7 @@ p{
     right: 2%;
     /* top:${props => props.height}px */
 height: calc(100% - 67px);
+overflow: hidden;
 
 `
 

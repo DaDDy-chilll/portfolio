@@ -1,7 +1,11 @@
+import { Loader } from "@components"
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div style={{backgroundColor:'red'}}>
+      <Loader  />
+    </div>
   )
 }
 
