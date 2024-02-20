@@ -3,6 +3,7 @@ import Menu from "../menu/Menu.component";
 import { Nav } from "./Navbar.style";
 
 const Navbar = () => {
+
   return (
     <Nav>
       <a href="/">

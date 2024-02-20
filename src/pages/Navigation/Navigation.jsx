@@ -6,11 +6,11 @@ import { useEffect } from 'react';
 
 
 const Navigation = () => {
-  
   const location = useLocation();
   const dispatch = useDispatch()
   const {pathname} = location
   const {pageTitle,pageNumber} = useSelector(state => state.pageInfo)
+
   useEffect(()=>{
     dispatch(changeInfo(pathname))
   },[pathname])

@@ -13,6 +13,7 @@ p{
     font-weight: bolder;
     font-size: 1.2rem;
     margin: 20% 0;
+    user-select: none;
 }
 
 
