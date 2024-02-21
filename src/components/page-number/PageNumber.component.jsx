@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const PageNumber = ({ pageNumber }) => {
   const navigate = useNavigate();
-  const windowWidth = window.innerWidth / 2 - 20;
+  const windowWidth = window.innerWidth / 2 - 65;
 
   const prevBtn = () => {
     const path = pageNumber === 1 ? null : checkRoute(pageNumber - 1);

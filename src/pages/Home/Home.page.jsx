@@ -1,11 +1,13 @@
-import { Loader } from "@components"
-
+import { LogoLeft, LogoRight } from "@assets"
+import { BackgroundLogoContainer } from "./Home.style"
+import { motion } from "framer-motion"
 
 const Home = () => {
   return (
-    <div style={{backgroundColor:'red'}}>
-      <Loader  />
-    </div>
+    <BackgroundLogoContainer as={motion.div}>
+      <LogoLeft />
+      <LogoRight />
+    </BackgroundLogoContainer>
   )
 }
 
