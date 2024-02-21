@@ -1,24 +1,29 @@
 /* eslint-disable react/prop-types */
-import { useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { Number } from "./PageNumber.style";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { changeInfo } from "@store";
 
-const PageNumber = ({ pageNumber }) => {
-  const numberRef = useRef(null)
+const PageNumber = () => {
+  const { pageNumber } = useSelector((state) => state.pageInfo);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
-  const windowWidth = window.innerWidth / 2 - 65;
+  const windowWidth = window.innerWidth / 2 - 71;
+  let path;
 
   const prevBtn = () => {
-   numberRef.current.innerText=pageNumber
-    const path = pageNumber === 1 ? null : checkRoute(pageNumber - 1);
+    if (pageNumber === 1) return;
+    path = checkRoute(pageNumber - 1);
+    dispatch(changeInfo(path));
     navigate(path);
   };
 
   const nextBtn = () => {
-   numberRef.current.innerText=pageNumber
-    const path = pageNumber === 5 ? null : checkRoute(pageNumber + 1);
+    if (pageNumber === 5) return;
+    path = checkRoute(pageNumber + 1);
+    dispatch(changeInfo(path));
     navigate(path);
   };
   return (
@@ -30,9 +35,15 @@ const PageNumber = ({ pageNumber }) => {
         className="number"
         initial={{ y: "50px" }}
         animate={{ y: 0 }}
-        transition={{ duration: .05, ease: "easeIn",type:"spring",stiffness:100, }}
+        transition={{
+          duration: 0.05,
+          ease: "easeIn",
+          type: "spring",
+          stiffness: 100,
+        }}
+        key={pageNumber}
       >
-        0<span ref={numberRef}>{pageNumber}</span>
+        0<span>{pageNumber}</span>
       </motion.div>
       <button onClick={nextBtn}>
         <AiOutlineRight />

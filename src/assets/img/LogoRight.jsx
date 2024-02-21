@@ -10,8 +10,9 @@ export const LogoRight = () => {
       xmlns="http://www.w3.org/2000/svg"
       initial={{y:"100px",opacity:0}}
       animate={{y:0,opacity:1}}
-      transition={{delay:.9, duration:.5,type:'spring',stiffness:200}}
+      transition={{delay:.9, duration:1,type:'spring',stiffness:200}}
       exit={{y:"100px", opacity:0,transition:{duration:.2}}}
+      key='logoright'
     >
       <path
         d="M0.931488 688.361V109.726L175.822 0L361 99.2757V318.727L180.966 423.228L62.6575 355.303L134.671 423.228V600.88L62.6575 688.361H0.931488Z"

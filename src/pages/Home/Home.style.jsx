@@ -5,9 +5,12 @@ const BackgroundLogoContainer = styled.div`
     top: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
+    height: 100vh;
     z-index: -1;
-    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export {BackgroundLogoContainer}

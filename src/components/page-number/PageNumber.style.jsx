@@ -6,7 +6,6 @@ const Number = styled.div`
 
   display: flex;
   justify-content: center;
-
   .number {
     font-family: "Monomaniac One", sans-serif;
     font-size: 3rem;

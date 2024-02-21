@@ -10,8 +10,9 @@ export const LogoLeft = () => {
       xmlns="http://www.w3.org/2000/svg"
       initial={{y:"-100px",opacity:0}}
       animate={{y:0,opacity:1}}
-      transition={{delay:.9, duration:.5,type:'spring',stiffness:200}}
+      transition={{delay:.9, duration:1,type:'spring',stiffness:200}}
       exit={ {y:"-100px", opacity: 0 ,transition:{duration:.2}}}
+      key='logoleft'
     >
       <path
         d="M360.069 688.361V109.726L185.178 0L0 99.2757V318.727L180.034 423.228L298.342 355.303L226.329 423.228V600.88L298.342 688.361H360.069Z"

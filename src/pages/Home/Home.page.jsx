@@ -1,11 +1,10 @@
 import { LogoLeft, LogoRight } from "@assets";
 import { BackgroundLogoContainer } from "./Home.style";
-import { motion } from "framer-motion";
-import { HomeCircle } from "@components";
+import { HomeCircle,TextCircle } from "@components";
 const Home = () => {
   return (
  <>
-     <BackgroundLogoContainer as={motion.div}>
+     <BackgroundLogoContainer>
       <LogoLeft />
       <LogoRight />
     </BackgroundLogoContainer>

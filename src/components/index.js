@@ -8,5 +8,8 @@ import PageInfo from "./pageinfo/PageInfo.component";
 import MenuList from "./menulists/MenuList.component";
 import Loading from "./loader/Loader.component";
 import HomeCircle from "./home-circle/HomeCircle.component";
-export {Navbar,PageTitle,PageNumber,Loader,PageInfo,MenuList,Loading,HomeCircle}
+import TextCircle from "./text-circle/TextCircle.component";
+
+
+export {Navbar,PageTitle,PageNumber,Loader,PageInfo,MenuList,Loading,HomeCircle,TextCircle}
 
