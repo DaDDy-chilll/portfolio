@@ -3,17 +3,21 @@ import { useNavigate } from "react-router-dom";
 import { Number } from "./PageNumber.style";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const PageNumber = ({ pageNumber }) => {
+  const numberRef = useRef(null)
   const navigate = useNavigate();
   const windowWidth = window.innerWidth / 2 - 65;
 
   const prevBtn = () => {
+   numberRef.current.innerText=pageNumber
     const path = pageNumber === 1 ? null : checkRoute(pageNumber - 1);
     navigate(path);
   };
 
   const nextBtn = () => {
+   numberRef.current.innerText=pageNumber
     const path = pageNumber === 5 ? null : checkRoute(pageNumber + 1);
     navigate(path);
   };
@@ -24,11 +28,11 @@ const PageNumber = ({ pageNumber }) => {
       </button>
       <motion.div
         className="number"
-        initial={{ y: "100px" }}
+        initial={{ y: "50px" }}
         animate={{ y: 0 }}
-        transition={{ duration: .1, ease: "easeIn",type:"spring",stiffness:100 }}
+        transition={{ duration: .05, ease: "easeIn",type:"spring",stiffness:100, }}
       >
-        0<span>{pageNumber}</span>
+        0<span ref={numberRef}>{pageNumber}</span>
       </motion.div>
       <button onClick={nextBtn}>
         <AiOutlineRight />

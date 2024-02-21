@@ -1,11 +1,13 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Home, Navigation, About, Contact, Skills, Projects } from "@pages";
 import { AnimatePresence } from "framer-motion";
-import { PageInfo } from "./components";
+import {  PageInfo } from "@components";
 
 
 function App() {
   const location = useLocation();
+
+
   return (
  <>
  <Navigation />

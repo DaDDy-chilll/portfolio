@@ -1,37 +1,25 @@
 import { motion } from "framer-motion";
 
-
-
 export const LogoLeft = () => {
   return (
     <motion.svg
-      width="445"
-      height="711"
-      viewBox="0 0 445 711"
+      width="361"
+      height="689"
+      viewBox="0 0 361 689"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       initial={{y:"-100px",opacity:0}}
       animate={{y:0,opacity:1}}
       transition={{delay:.9, duration:.5,type:'spring',stiffness:200}}
-      exit={ {y:"-100px", opacity: 0 ,transition:{duration:.2}}}>
+      exit={ {y:"-100px", opacity: 0 ,transition:{duration:.2}}}
     >
       <path
-        d="M222.409 0.827637L29.7971 112.032V334.442L222.409 445.647L415.022 334.442V112.032L222.409 0.827637Z"
-        fill="black"
+        d="M360.069 688.361V109.726L185.178 0L0 99.2757V318.727L180.034 423.228L298.342 355.303L226.329 423.228V600.88L298.342 688.361H360.069Z"
+        fill="#272727"
         fillOpacity="0.27"
       />
       <path
-        d="M415.181 334.199L349.202 372.016V709.954H415.181V334.199Z"
-        fill="black"
-        fillOpacity="0.27"
-      />
-      <path
-        d="M349.203 710.498V372.56L275.214 455.837L275.179 625.644L349.203 710.498Z"
-        fill="black"
-        fillOpacity="0.27"
-      />
-      <path
-        d="M219.083 90.9445L332.166 156.232V286.808L219.083 352.096L106.001 286.808V156.232L219.083 90.9445Z"
+        d="M171.581 73.1505L275.628 134.17V256.21L171.581 317.229L67.5343 256.21V134.17L171.581 73.1505Z"
         fill="white"
       />
     </motion.svg>
