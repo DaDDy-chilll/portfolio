@@ -21,10 +21,6 @@ const TextContainer = styled.div`
     height: 103%;
     position: relative;
     transform: scale(1.1);
-    /* background-color: green; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
 `;
 
 const Text = styled.span`

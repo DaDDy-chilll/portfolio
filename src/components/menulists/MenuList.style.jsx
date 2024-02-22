@@ -1,5 +1,8 @@
 import {styled} from 'styled-components'
 
-const List = styled.div``
+const Container = styled.div`
+    position: absolute;
+    right: 2%;
+`
 
-export default List
+export  {Container}
