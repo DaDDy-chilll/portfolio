@@ -9,7 +9,7 @@ const homeState = createSlice({
     initialState,
     reducers:{
         isMenuOpen:(state) => {
-            state.isOpen = !state.home;
+            state.isOpen = !state.isOpen;
         }
     }
 })

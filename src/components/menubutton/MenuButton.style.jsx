@@ -2,9 +2,10 @@ import { styled } from "styled-components";
 
 const Menuicon = styled.div`
   width: 20%;
+  height: 40px;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   cursor: pointer;
   transition: all .2s;
   

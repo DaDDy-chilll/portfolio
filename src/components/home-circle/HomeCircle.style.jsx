@@ -2,11 +2,11 @@ import { styled } from "styled-components";
 
 const Circl = styled.div`
   z-index: 1;
-  /* color: white; */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column-reverse;
 
   .half_circle {
     width: 25rem;

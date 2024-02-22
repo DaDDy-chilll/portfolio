@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Circl } from "./HomeCircle.style";
-import { TextCircle } from "@components";
+import { TextCircle,IconContainer } from "@components";
 
 motion;
 const HomeCircle = () => {
@@ -25,6 +25,7 @@ const HomeCircle = () => {
        <TextCircle/>
        </motion.span>
       </motion.div>
+      <IconContainer />
     </Circl>
   );
 };

@@ -1,7 +1,7 @@
 import {styled} from 'styled-components'
 
 const Wrapper = styled.div`
-  
+  z-index: -1;
 
 span{
     text-align: center;

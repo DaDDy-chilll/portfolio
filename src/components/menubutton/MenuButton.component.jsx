@@ -5,7 +5,11 @@ import { isMenuOpen } from "@store";
 
 const MenuButton = () => {
   const disptach = useDispatch();
-  const clickhandle = () => disptach(isMenuOpen());
+  const clickhandle = () => {
+    console.log('start');
+    disptach(isMenuOpen())
+    console.log('end');
+  };
   return (
     <Menuicon
       as={motion.div}
