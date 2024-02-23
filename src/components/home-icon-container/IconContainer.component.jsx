@@ -1,10 +1,43 @@
 import Container from "./IconContainer.style";
-import { codeIcon} from "/src/assets/index.js";
+import { 
+  HtmlIcon,
+  CodeIcon,
+  CssIcon,
+  DbIcon,
+  FigmaIcon,
+  GitBranchIcon,
+  GitIcon,
+  GitPullIcon,
+  JavaIcon,
+  MongoIcon,
+  MysqlIcon,
+  NodejsIcon,
+  ReactIcon,
+  SassIcon,
+  PhpIcon,
+  JsIcon,
+ } from "@assets";
 
 const IconContainer = () => {
   return (
     <Container>
-      <codeIcon />
+     <HtmlIcon />
+     <CodeIcon />
+     <CssIcon />
+     <DbIcon />
+     <FigmaIcon />
+     <GitBranchIcon />
+     <GitPullIcon />
+     <GitIcon />
+     <GitPullIcon />
+     <JavaIcon />
+     <MongoIcon />
+     <MysqlIcon />
+     <NodejsIcon />
+     <ReactIcon />
+     <SassIcon />
+     <PhpIcon />
+     <JsIcon />
     </Container>
   );
 };
