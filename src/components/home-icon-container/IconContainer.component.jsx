@@ -16,6 +16,8 @@ import {
   SassIcon,
   PhpIcon,
   JsIcon,
+  LinuxIcon,
+  NetworkIcon,
  } from "@assets";
 
 const IconContainer = () => {
@@ -38,6 +40,8 @@ const IconContainer = () => {
      <SassIcon />
      <PhpIcon />
      <JsIcon />
+     <LinuxIcon />
+     <NetworkIcon />
     </Container>
   );
 };

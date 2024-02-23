@@ -25,6 +25,8 @@ import {
   SassIcon,
   PhpIcon,
   JsIcon,
+  LinuxIcon,
+  NetworkIcon,
 } from "./img/home";
 
 export {
@@ -52,4 +54,6 @@ export {
   SassIcon,
   PhpIcon,
   JsIcon,
+  LinuxIcon,
+  NetworkIcon,
 };

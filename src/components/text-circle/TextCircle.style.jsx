@@ -7,7 +7,6 @@ left: -41.997px;
 width: 30rem;
 height: 30rem;
 
-
 border-radius: 100%;
 
 display: flex;
