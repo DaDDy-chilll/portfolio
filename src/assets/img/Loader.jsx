@@ -25,6 +25,7 @@ const pathVariants = {
 export const Loader = () => {
   return (
     <motion.svg
+    key='loader'
       width="398"
       height="439"
       viewBox="0 0 398 439"

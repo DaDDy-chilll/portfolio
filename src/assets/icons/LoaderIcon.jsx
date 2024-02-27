@@ -26,6 +26,7 @@ const pathVariants = {
 export const LoaderIcon = () => {
   return (
     <motion.svg
+    key="loadericon"
       width="117"
       height="129"
       viewBox="0 0 117 129"

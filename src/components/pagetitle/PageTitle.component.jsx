@@ -10,7 +10,7 @@ const PageTitle = () => {
   const words = Array.from([...pageTitle]);
   const height = window.innerHeight / 2 / 2;
   return (
-    <Wrapper height={height}>
+    <Wrapper height={height} $name={pageTitle}>
       <PageTitleTail />
       <span>
         {words.map((w,i) => (

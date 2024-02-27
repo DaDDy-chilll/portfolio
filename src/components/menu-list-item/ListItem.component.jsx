@@ -14,6 +14,7 @@ const ListItem = ({ id, name,path }) => {
   return (
     <Container
       as={motion.div}
+      $name={name}
       $active={pageTitle === name ? true:false}
       initial={initialStyle(name)}
       animate={isOpen ? animationStyle(name) : exitStyle(name)}

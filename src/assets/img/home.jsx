@@ -4,6 +4,7 @@ import { styled } from "styled-components";
 const HtmlIcon = () => {
   return (
     <HTML
+      key="HTML"
       width="52"
       height="61"
       viewBox="0 0 52 61"
@@ -43,6 +44,8 @@ const HTML = styled.svg`
 const CssIcon = () => {
   return (
     <CSS
+      key="CSS"
+
       width="36"
       height="36"
       viewBox="0 0 36 36"
@@ -80,6 +83,8 @@ const CSS = styled.svg`
 const JsIcon = () => {
   return (
     <JS
+      key="JS"
+
       width="69"
       height="69"
       viewBox="0 0 69 69"
@@ -117,6 +122,8 @@ const JS = styled.svg`
 const NodejsIcon = () => {
   return (
     <NODE
+      key="NODE"
+
       width="52"
       height="60"
       viewBox="0 0 52 60"
@@ -162,6 +169,8 @@ const NODE = styled.svg`
 const MysqlIcon = () => {
   return (
     <MYSQL
+      key="MYSQL"
+
       width="53"
       height="42"
       viewBox="0 0 53 42"
@@ -211,6 +220,8 @@ const MYSQL = styled.svg`
 const MongoIcon = () => {
   return (
     <MONGO
+      key="MONGO"
+
       width="30"
       height="65"
       viewBox="0 0 30 65"
@@ -248,6 +259,8 @@ const MONGO = styled.svg`
 const PhpIcon = () => {
   return (
     <PHP
+      key="PHP"
+    
       width="52"
       height="52"
       viewBox="0 0 52 52"
@@ -285,6 +298,8 @@ const PHP = styled.svg`
 const ReactIcon = () => {
   return (
     <REACT
+      key="REACT"
+
       width="83"
       height="74"
       viewBox="0 0 83 74"
@@ -326,6 +341,8 @@ const REACT = styled.svg`
 const SassIcon = () => {
   return (
     <SASS
+      key="SASS"
+
       width="42"
       height="42"
       viewBox="0 0 42 42"
@@ -367,6 +384,8 @@ const SASS = styled.svg`
 const CodeIcon = () => {
   return (
     <CODE
+      key="CODE"
+
       width="49"
       height="24"
       viewBox="0 0 49 24"
@@ -404,6 +423,8 @@ const CODE = styled.svg`
 const DbIcon = () => {
   return (
     <DB
+      key="DB"
+
       width="59"
       height="50"
       viewBox="0 0 59 50"
@@ -445,6 +466,8 @@ const DB = styled.svg`
 const FigmaIcon = () => {
   return (
     <FIGMA
+      key="FIGMA"
+
       width="59"
       height="59"
       viewBox="0 0 59 59"
@@ -506,6 +529,8 @@ const FIGMA = styled.svg`
 const GitIcon = () => {
   return (
     <GIT
+      key="GIT"
+    
       width="71"
       height="30"
       viewBox="0 0 71 30"
@@ -543,6 +568,8 @@ const GIT = styled.svg`
 const GitBranchIcon = () => {
   return (
     <GITBRANCH
+      key="GITBRANCH"
+
       width="31"
       height="46"
       viewBox="0 0 31 46"
@@ -580,6 +607,8 @@ const GITBRANCH = styled.svg`
 const GitPullIcon = () => {
   return (
     <GITPULL
+      key="GITPULL"
+
       width="38"
       height="48"
       viewBox="0 0 38 48"
@@ -617,6 +646,8 @@ const GITPULL = styled.svg`
 const JavaIcon = () => {
   return (
     <JAVA
+      key="JAVA"
+
       width="46"
       height="60"
       viewBox="0 0 46 60"
@@ -670,6 +701,8 @@ const JAVA = styled.svg`
 const LinuxIcon = () => {
   return (
     <LINUX
+      key="LINUX"
+
       xmlns="http://www.w3.org/2000/svg"
       width="70"
       height="70"
@@ -707,6 +740,8 @@ const LINUX = styled.svg`
 const NetworkIcon = () => {
   return (
     <NETWORK
+      key="NETWORK"
+
       xmlns="http://www.w3.org/2000/svg"
       width="44"
       height="44"

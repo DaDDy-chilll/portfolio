@@ -1,7 +1,8 @@
 import { LogoLeft, LogoRight } from "@assets";
 import { BackgroundLogoContainer } from "./Home.style";
-import { HomeCircle,TextCircle } from "@components";
+import { HomeCircle } from "@components";
 const Home = () => {
+  document.body.style.backgroundColor='var(--primary-color)';
   return (
  <>
      <BackgroundLogoContainer>

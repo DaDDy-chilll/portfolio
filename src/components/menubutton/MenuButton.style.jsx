@@ -29,7 +29,8 @@ const Menuicon = styled.div`
   &:active{
     & > div {
       border: 2px solid black;
-      background-color: white;
+      background-color: ${props => props.$name === 'about' ? 'var(--secondary-color)':'var(--primary-color)'};
+
     }
   }
 
@@ -37,7 +38,7 @@ const Menuicon = styled.div`
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: black;
+    background-color: ${props => props.$name === 'about' ? 'var(--primary-color)':'var(--secondary-color)'};
   }
   
 

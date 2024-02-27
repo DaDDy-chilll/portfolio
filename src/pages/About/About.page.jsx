@@ -1,8 +1,22 @@
+import { motion } from "framer-motion";
+import { Container } from "./About.style";
 
 const About = () => {
+  document.body.style.backgroundColor = "var(--secondary-color)";
   return (
-    <div>About</div>
-  )
-}
+    <Container
+    key='about'
+      as={motion.div}
+      initial={{ y: "-100%",opacity:0 }}
+      animate={{
+        y: 0,
+        opacity:1,
+        transition: { duration: 1, delay: .1, type: "tween", stiffness: 300 },
+      }}
+      exit={{y:'100%',opacity:0,transition:{duration:.1}}}
+    >
+    </Container>
+  );
+};
 
-export default About
+export default About;

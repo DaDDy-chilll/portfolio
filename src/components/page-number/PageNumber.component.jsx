@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeInfo } from "@store";
 
 const PageNumber = () => {
-  const { pageNumber } = useSelector((state) => state.pageInfo);
+  const { pageNumber,pageTitle } = useSelector((state) => state.pageInfo);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const windowWidth = window.innerWidth / 2 - 71;
@@ -27,9 +27,9 @@ const PageNumber = () => {
     navigate(path);
   };
   return (
-    <Number $windowwidth={windowWidth}>
+    <Number $windowwidth={windowWidth} $name={pageTitle}>
       <button onClick={prevBtn}>
-        <AiOutlineLeft />
+        <AiOutlineLeft className="icon" />
       </button>
       <motion.div
         className="number"
@@ -46,7 +46,7 @@ const PageNumber = () => {
         0<span>{pageNumber}</span>
       </motion.div>
       <button onClick={nextBtn}>
-        <AiOutlineRight />
+        <AiOutlineRight className="icon" />
       </button>
     </Number>
   );

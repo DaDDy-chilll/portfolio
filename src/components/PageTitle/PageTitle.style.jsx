@@ -1,7 +1,7 @@
-import {styled} from 'styled-components'
+import {css, styled} from 'styled-components'
 
 const Wrapper = styled.div`
-  z-index: -1;
+  z-index: 0;
 
 span{
     text-align: center;
@@ -14,6 +14,18 @@ p{
     font-size: 1.2rem;
     margin: 20% 0;
     user-select: none;
+
+    ${props => {
+        if(props.$name === 'about'){
+            return css`
+            color: var(--primary-color);
+            `
+        }else{
+            return css`
+            color: var(--secondary-color);
+            `
+        }
+    }}
 }
 
 

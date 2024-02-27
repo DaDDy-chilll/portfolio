@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+:root {
+  --primary-color:white;
+  --secondary-color:#272727;
+}
 *{
   box-sizing: border-box;
 }
@@ -6,4 +10,5 @@
 body{
   margin: 0;
   overflow: hidden;
+  transition: all .2s;
 }

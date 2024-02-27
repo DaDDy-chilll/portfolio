@@ -1,15 +1,13 @@
 import { motion } from "framer-motion";
 import { Menuicon } from "./MenuButton.style";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { isMenuOpen } from "@store";
 
 const MenuButton = () => {
+  const {pageTitle} = useSelector(state => state.pageInfo);
   const disptach = useDispatch();
-  const clickhandle = () => {
-    console.log('start');
-    disptach(isMenuOpen())
-    console.log('end');
-  };
+  const clickhandle = () => disptach(isMenuOpen());
+
   return (
     <Menuicon
       as={motion.div}
@@ -17,6 +15,8 @@ const MenuButton = () => {
       animate={{ x: 0 }}
       transition={{ delay: 0.3, type: "spring", stiffness: 100 }}
       onClick={clickhandle}
+      $name={pageTitle}
+      key='MenuButton'
     >
       <div></div>
       <div></div>

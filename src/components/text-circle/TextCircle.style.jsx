@@ -29,6 +29,7 @@ const Text = styled.span`
     color: black;
     font-size: 2rem;
     font-family: "Monomaniac One", sans-serif;
+    text-transform: uppercase;
 
 `
 

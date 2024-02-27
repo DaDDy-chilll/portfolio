@@ -3,6 +3,7 @@ const Number = styled.div`
   position: absolute;
   bottom: 2%;
   left: ${(props) => props.$windowwidth}px;
+  z-index: 10;
 
   display: flex;
   justify-content: center;
@@ -18,27 +19,38 @@ const Number = styled.div`
     height: auto;
   }
 
-  button{
+  button {
     cursor: pointer;
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    
+
     display: flex;
     justify-content: center;
-    align-items: center; 
-    /* padding-top: 8%; */
-    transition: all .2s;
+    align-items: center;
+    transition: all 0.2s;
     border-radius: 5px;
 
-    &:hover{
-      background-color: black;
-      color: white;
-      
+    .icon {
+      color: var(
+        ${(props) =>
+          props.$name === "about" ? "--primary-color" : "--secondary-color"}
+      );
+    }
+
+    &:hover {
+      background-color: var(
+        ${(props) =>
+          props.$name === "about" ? "--primary-color" : "--secondary-color"}
+      );
+      .icon {
+        color: var(
+          ${(props) =>
+            props.$name === "about" ? "--secondary-color" : "--primary-color"}
+        );
+      }
     }
   }
-
-  
 `;
 
 export { Number };
