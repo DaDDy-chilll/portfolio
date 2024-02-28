@@ -1,9 +1,17 @@
+import { BottomTriangle, CenterBlock, TopTriangle } from "@assets";
+import {TriangleContainer} from "./Skills.style";
+
 
 const Skills = () => {
   document.body.style.backgroundColor='var(--primary-color)';
 
   return (
-    <div>Skills</div>
+    <>
+      <TriangleContainer>
+        <TopTriangle className='top' />
+        <BottomTriangle className='bottom' />
+      </TriangleContainer>
+    </>
   )
 }
 

@@ -8,9 +8,9 @@ import { AboutBackgroundImg } from "./img/AboutBackgroundImg";
 import { Loader } from "./img/Loader";
 import { LogoLeft } from "./img/LogoLeft";
 import { LogoRight } from "./img/LogoRight";
+import { BottomTriangle, CenterBlock, TopTriangle } from "./img/about";
 
 import {
-
   HtmlIcon,
   CodeIcon,
   CssIcon,
@@ -58,5 +58,8 @@ export {
   JsIcon,
   LinuxIcon,
   NetworkIcon,
-  AboutBackgroundImg
+  AboutBackgroundImg,
+  BottomTriangle,
+  CenterBlock,
+  TopTriangle,
 };
