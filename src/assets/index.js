@@ -8,7 +8,7 @@ import { AboutBackgroundImg } from "./img/AboutBackgroundImg";
 import { Loader } from "./img/Loader";
 import { LogoLeft } from "./img/LogoLeft";
 import { LogoRight } from "./img/LogoRight";
-import { BottomTriangle, CenterBlock, TopTriangle } from "./img/about";
+import { BottomTriangle, CenterBlock, TopTriangle } from "./img/skills";
 
 import {
   HtmlIcon,

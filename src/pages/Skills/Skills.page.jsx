@@ -1,18 +1,22 @@
 import { BottomTriangle, CenterBlock, TopTriangle } from "@assets";
-import {TriangleContainer} from "./Skills.style";
-
+import { TriangleContainer } from "./Skills.style";
 
 const Skills = () => {
-  document.body.style.backgroundColor='var(--primary-color)';
+  document.body.style.backgroundColor = "var(--primary-color)";
 
   return (
     <>
       <TriangleContainer>
-        <TopTriangle className='top' />
-        <BottomTriangle className='bottom' />
+        <div className="triangle_container">
+          <div className="uptriangle"></div>
+          <div className="bottomtriangle"></div>
+        </div>
+        <div className="center_block">
+          <CenterBlock />
+        </div>
       </TriangleContainer>
     </>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
