@@ -16,6 +16,7 @@ const TriangleContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  z-index: -1;
     
     .bottomtriangle {
       border-left: 500px solid transparent;

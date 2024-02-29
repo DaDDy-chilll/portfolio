@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 const Number = styled.div`
   position: absolute;
   bottom: 2%;
@@ -32,22 +32,43 @@ const Number = styled.div`
     border-radius: 5px;
 
     .icon {
-      color: var(
-        ${(props) =>
-          props.$name === "about" ? "--primary-color" : "--secondary-color"}
-      );
+      ${props => {
+        if(props.$name === 'about' || props.$name === 'skills' || props.$name === 'contact'){
+          return css`
+            color: var(--primary-color);
+          `
+        }else{
+          return css`
+            color: var(--secondary-color);
+          `
+        }
+      }}
     }
 
     &:hover {
-      background-color: var(
-        ${(props) =>
-          props.$name === "about" ? "--primary-color" : "--secondary-color"}
-      );
+      ${props => {
+        if(props.$name === 'about' || props.$name === 'skills' || props.$name === 'contact'){
+          return css`
+            background-color: var(--primary-color);
+          `
+        }else{
+          return css`
+            background-color: var(--secondary-color);
+          `
+        }
+      }}
       .icon {
-        color: var(
-          ${(props) =>
-            props.$name === "about" ? "--secondary-color" : "--primary-color"}
-        );
+        ${props => {
+        if(props.$name === 'about' || props.$name === 'skills' || props.$name === 'contact'){
+          return css`
+            color: var(--secondary-color);
+          `
+        }else{
+          return css`
+            color: var(--primary-color);
+          `
+        }
+      }}
       }
     }
   }

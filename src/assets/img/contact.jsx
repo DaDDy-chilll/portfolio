@@ -11,9 +11,13 @@ export const ContactCenter = () => {
       viewBox="0 0 812 888"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      initial={{scale:0,rotateY:'360deg'}}
-      animate={{scale:1,rotateY:0,transition:{duration:.8,type:'spring',stiffness:100}}}
-      exit={{scale:0,transition:{duration:.5}}}
+      initial={{ scale: 0, rotateY: "360deg" }}
+      animate={{
+        scale: 1,
+        rotateY: 0,
+        transition: { duration: 0.8, type: "spring", stiffness: 100 },
+      }}
+      exit={{ scale: 0, transition: { duration: 0.5 } }}
     >
       <path
         d="M406 0L757.606 222V666L406 888L54.3937 666V222L406 0Z"
@@ -53,57 +57,113 @@ export const ContactSide = ({ dir }) => {
         d="M103.5 93L150.698 122.75V182.25L103.5 212L56.3016 182.25V122.75L103.5 93Z"
         fill="black"
         fillOpacity="0.8"
-        initial={dir === 'right' ? {x:200,opacity:0}:{x:-300,opacity:0}}
-        animate={{x:0,opacity:1,transition:{delay:0.1,duration:.5,type:"tween"}}}
+        initial={
+          dir === "right" ? { x: 200, opacity: 0 } : { x: -300, opacity: 0 }
+        }
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { delay: 0.1, duration: 0.5, type: "tween" },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M103.5 279L150.698 308.75V368.25L103.5 398L56.3016 368.25V308.75L103.5 279Z"
         fill="black"
         fillOpacity="0.8"
-        initial={dir === 'right' ? {x:200,opacity:0}:{x:-300,opacity:0}}
-        animate={{x:0,opacity:1,transition:{delay:0.2,duration:.5,type:"tween"}}}
+        initial={
+          dir === "right" ? { x: 200, opacity: 0 } : { x: -300, opacity: 0 }
+        }
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { delay: 0.2, duration: 0.5, type: "tween" },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M154.5 0L201.698 29.75V89.25L154.5 119L107.302 89.25V29.75L154.5 0Z"
         fill="black"
         fillOpacity="0.8"
-        initial={dir === 'right' ? {x:200,opacity:0}:{x:-300,opacity:0}}
-        animate={{x:0,opacity:1,transition:{delay:0.3,duration:.5,type:"tween"}}}
+        initial={
+          dir === "right" ? { x: 200, opacity: 0 } : { x: -300, opacity: 0 }
+        }
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { delay: 0.3, duration: 0.5, type: "tween" },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M154.5 186L201.698 215.75V275.25L154.5 305L107.302 275.25V215.75L154.5 186Z"
         fill="black"
         fillOpacity="0.8"
-        initial={dir === 'right' ? {x:200,opacity:0}:{x:-300,opacity:0}}
-        animate={{x:0,opacity:1,transition:{delay:0.4,duration:.5,type:"tween"}}}
+        initial={
+          dir === "right" ? { x: 200, opacity: 0 } : { x: -300, opacity: 0 }
+        }
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { delay: 0.4, duration: 0.5, type: "tween" },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M154.5 372L201.698 401.75V461.25L154.5 491L107.302 461.25V401.75L154.5 372Z"
         fill="black"
         fillOpacity="0.8"
-        initial={dir === 'right' ? {x:200,opacity:0}:{x:-300,opacity:0}}
-        animate={{x:0,opacity:1,transition:{delay:0.5,duration:.5,type:"tween"}}}
+        initial={
+          dir === "right" ? { x: 200, opacity: 0 } : { x: -300, opacity: 0 }
+        }
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { delay: 0.5, duration: 0.5, type: "tween" },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M54.5 0L101.698 29.75V89.25L54.5 119L7.30162 89.25V29.75L54.5 0Z"
         fill="black"
         fillOpacity="0.8"
-        initial={dir === 'right' ? {x:200,opacity:0}:{x:-300,opacity:0}}
-        animate={{x:0,opacity:1,transition:{delay:0.6,duration:.5,type:"tween"}}}
+        initial={
+          dir === "right" ? { x: 200, opacity: 0 } : { x: -300, opacity: 0 }
+        }
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { delay: 0.6, duration: 0.5, type: "tween" },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M54.5 186L101.698 215.75V275.25L54.5 305L7.30162 275.25V215.75L54.5 186Z"
         fill="black"
         fillOpacity="0.8"
-        initial={dir === 'right' ? {x:200,opacity:0}:{x:-300,opacity:0}}
-        animate={{x:0,opacity:1,transition:{delay:0.7,duration:.5,type:"tween"}}}
+        initial={
+          dir === "right" ? { x: 200, opacity: 0 } : { x: -300, opacity: 0 }
+        }
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { delay: 0.7, duration: 0.5, type: "tween" },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M54.5 372L101.698 401.75V461.25L54.5 491L7.30162 461.25V401.75L54.5 372Z"
         fill="black"
         fillOpacity="0.8"
-        initial={dir === 'right' ? {x:200,opacity:0}:{x:-300,opacity:0}}
-        animate={{x:0,opacity:1,transition:{delay:0.8,duration:.5,type:"tween"}}}
+        initial={
+          dir === "right" ? { x: 200, opacity: 0 } : { x: -300, opacity: 0 }
+        }
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { delay: 0.8, duration: 0.5, type: "tween" },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
     </Side>
   );
@@ -139,15 +199,29 @@ export const ContactSideSmall = ({ dir }) => {
         d="M38.5 0L71.842 21V63L38.5 84L5.15802 63V21L38.5 0Z"
         fill="black"
         fillOpacity="0.6"
-        initial={dir === 'right' ? {x:200,opacity:0}:{x:-300,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:.6}}}
+        initial={
+          dir === "right" ? { x: 200, opacity: 0 } : { x: -300, opacity: 0 }
+        }
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.6 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M41.5 186L74.842 207V249L41.5 270L8.15802 249V207L41.5 186Z"
         fill="black"
         fillOpacity="0.6"
-        initial={dir === 'right' ? {x:200,opacity:0}:{x:-300,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:.5}}}
+        initial={
+          dir === "right" ? { x: 200, opacity: 0 } : { x: -300, opacity: 0 }
+        }
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.5 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
     </SideSmall>
   );
@@ -183,78 +257,125 @@ export const ContactSideTinyRight = ({ dir }) => {
         d="M26.5 213L5.28238 226.25V252.75L26.5 266L47.7176 252.75V226.25L26.5 213Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:1}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1, transition: { duration: 0.5, delay: 1 } }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M50.5 171L29.2824 184.25V210.75L50.5 224L71.7176 210.75V184.25L50.5 171Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:1.1}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 1.1 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M73.5 129L52.2824 142.25V168.75L73.5 182L94.7176 168.75V142.25L73.5 129Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:.9}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.9 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M56.5 84L35.2824 97.25V123.75L56.5 137L77.7176 123.75V97.25L56.5 84Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:.8}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.8 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M31.5 44L10.2824 57.25V83.75L31.5 97L52.7176 83.75V57.25L31.5 44Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:1.2}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 1.2 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M55.5 0L34.2824 13.25V39.75L55.5 53L76.7176 39.75V13.25L55.5 0Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:.7}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.7 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M50.5 255L29.2824 268.25V294.75L50.5 308L71.7176 294.75V268.25L50.5 255Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:1.2}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 1.2 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M74.5 297L53.2824 310.25V336.75L74.5 350L95.7176 336.75V310.25L74.5 297Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:.8}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.8 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M49.5 339L28.2824 352.25V378.75L49.5 392L70.7176 378.75V352.25L49.5 339Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:.9}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.9 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M24.5 379L3.28238 392.25V418.75L24.5 432L45.7176 418.75V392.25L24.5 379Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:1.1}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 1.1 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M50.5 418L29.2824 431.25V457.75L50.5 471L71.7176 457.75V431.25L50.5 418Z"
         fill="black"
         fillOpacity="0.4"
-        initial={{x:200,opacity:0}}
-        animate={{x:0,opacity:1,transition:{duration:.5,delay:1}}}
+        initial={{ x: 200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1, transition: { duration: 0.5, delay: 1 } }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
     </SideTiny>
   );
@@ -274,80 +395,125 @@ export const ContactSideTinyLeft = ({ dir }) => {
         d="M72.5 213L93.7176 226.25V252.75L72.5 266L51.2824 252.75V226.25L72.5 213Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:1}}}
-
+        initial={{ x: -200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1, transition: { duration: 0.5, delay: 1 } }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M48.5 171L69.7176 184.25V210.75L48.5 224L27.2824 210.75V184.25L48.5 171Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:1.1}}}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 1.1 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M25.5 129L46.7176 142.25V168.75L25.5 182L4.28238 168.75V142.25L25.5 129Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:.9}}}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.9 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M42.5 84L63.7176 97.25V123.75L42.5 137L21.2824 123.75V97.25L42.5 84Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:.8}}}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.8 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M67.5 44L88.7176 57.25V83.75L67.5 97L46.2824 83.75V57.25L67.5 44Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:1.2}}}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 1.2 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M43.5 0L64.7176 13.25V39.75L43.5 53L22.2824 39.75V13.25L43.5 0Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:.7}}}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.7 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M48.5 255L69.7176 268.25V294.75L48.5 308L27.2824 294.75V268.25L48.5 255Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:1.2}}}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 1.2 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M24.5 297L45.7176 310.25V336.75L24.5 350L3.28238 336.75V310.25L24.5 297Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:.8}}}
-
+        initial={{ x: -200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.8 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M49.5 339L70.7176 352.25V378.75L49.5 392L28.2824 378.75V352.25L49.5 339Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:.9}}}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.9 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M74.5 379L95.7176 392.25V418.75L74.5 432L53.2824 418.75V392.25L74.5 379Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:1.1}}}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 1.1 },
+        }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
       <motion.path
         d="M48.5 418L69.7176 431.25V457.75L48.5 471L27.2824 457.75V431.25L48.5 418Z"
         fill="black"
         fillOpacity="0.4"
-         initial={{x:-200,opacity:0}}
-         animate={{x:0,opacity:1,transition:{duration:.5,delay:1}}}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1, transition: { duration: 0.5, delay: 1 } }}
+        exit={{ rotateY: "180deg", opacity: 0, transition: { duration: 0.5 } }}
       />
     </SideTiny>
   );
@@ -372,15 +538,16 @@ const SideTiny = styled.svg`
 export const ContactSideTinySmallRight = ({ dir }) => {
   return (
     <SideTinySmall
-    as={motion.svg}
+      as={motion.svg}
       $dir={dir}
       width="81"
       height="481"
       viewBox="0 0 81 481"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      initial={{x:300,opacity:0}}
-      animate={{x:0,opacity:1,transition:{delay:1,duration:.5}}}
+      initial={{ x: 300, opacity: 0 }}
+      animate={{ x: 0, opacity: 1, transition: { delay: 1, duration: 0.5 } }}
+      exit={{ x: 300, opacity: 0, transition: { duration: 0.5 } }}
     >
       <path
         d="M23.5 48L13.5407 54.25V66.75L23.5 73L33.4593 66.75V54.25L23.5 48Z"
@@ -606,8 +773,9 @@ export const ContactSideTinySmallLeft = ({ dir }) => {
       viewBox="0 0 81 481"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      initial={{x:-300,opacity:0}}
-      animate={{x:0,opacity:1,transition:{delay:1,duration:.5}}}
+      initial={{ x: -300, opacity: 0 }}
+      animate={{ x: 0, opacity: 1, transition: { delay: 1, duration: 0.5 } }}
+      exit={{ x: -300, opacity: 0, transition: { duration: 0.5 } }}
     >
       <path
         d="M57.5 48L67.4593 54.25V66.75L57.5 73L47.5407 66.75V54.25L57.5 48Z"
