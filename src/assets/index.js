@@ -30,6 +30,15 @@ import {
   LinuxIcon,
   NetworkIcon,
 } from "./img/home";
+import {
+  ContactCenter,
+  ContactSide,
+  ContactSideSmall,
+  ContactSideTinyLeft,
+  ContactSideTinyRight,
+  ContactSideTinySmallLeft,
+  ContactSideTinySmallRight,
+} from "./img/contact";
 
 export {
   LOGO,
@@ -62,4 +71,11 @@ export {
   BottomTriangle,
   CenterBlock,
   TopTriangle,
+  ContactCenter,
+  ContactSide,
+  ContactSideSmall,
+  ContactSideTinyLeft,
+  ContactSideTinyRight,
+  ContactSideTinySmallLeft,
+  ContactSideTinySmallRight,
 };
