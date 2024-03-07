@@ -10,7 +10,9 @@ import Loading from "./loader/Loader.component";
 import HomeCircle from "./home-circle/HomeCircle.component";
 import TextCircle from "./text-circle/TextCircle.component";
 import IconContainer from "./home-icon-container/IconContainer.component";
+import MyInfoContainer from "./my-info-container/MyInfoContainer.component";
 
 
-export {Navbar,PageTitle,PageNumber,Loader,PageInfo,MenuList,Loading,HomeCircle,TextCircle,IconContainer}
+
+export {Navbar,PageTitle,PageNumber,Loader,PageInfo,MenuList,Loading,HomeCircle,TextCircle,IconContainer,MyInfoContainer}
 
