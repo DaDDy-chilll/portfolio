@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 const initialState = {
   menu1: true,
   menu2: false,
@@ -8,7 +7,6 @@ const initialState = {
   menu5: false,
   menu6: false,
 };
-
 const aboutState = createSlice({
   name: "aboutState",
   initialState,
@@ -72,5 +70,5 @@ const aboutState = createSlice({
   },
 });
 
-export const { menuOpen } = aboutState.actions;
+export const { menuOpen,downloadCV } = aboutState.actions;
 export default aboutState.reducer;

@@ -6,6 +6,7 @@ const InfoContainer = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
+  
   h1 {
     font-family: "Honk", system-ui;
     font-size: 3rem;
@@ -23,13 +24,11 @@ const InfoContainer = styled.div`
     display: flex;
     justify-content: center;
     margin-left: 7%;
-  overflow: hidden;
-
+    overflow: hidden;
 
     .profile_img {
       height: 100%;
     }
-
   }
 
   .info_menu {
