@@ -1,8 +1,9 @@
 import {styled} from 'styled-components'
 
 const InfoList = styled.div`
-      background-color: #3e3e3e;
-      color: white;
+      background-color: ${porps => porps.isActive ? 'white':'#3e3e3e'};
+      color: ${porps => porps.isActive ? '#3e3e3e':'white'};
+      border:  ${porps => porps.isActive ? '1px solid #3e3e3e':null};
       font-size: 1.1rem;
       padding: 3%;
       margin: 2% 0;
@@ -15,6 +16,8 @@ const InfoList = styled.div`
         background-color: white;
         border: 1px solid #3e3e3e;
       }
+
+      
 
 `
 export default InfoList;

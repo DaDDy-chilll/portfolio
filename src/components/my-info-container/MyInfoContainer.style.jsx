@@ -23,19 +23,13 @@ const InfoContainer = styled.div`
     display: flex;
     justify-content: center;
     margin-left: 7%;
+  overflow: hidden;
+
+
     .profile_img {
       height: 100%;
     }
 
-    .info_data {
-      padding-left: 5%;
-
-      p {
-        font-size: 1.2rem;
-        font-family: "Josefin Sans", sans-serif;
-
-      }
-    }
   }
 
   .info_menu {
