@@ -103,10 +103,36 @@ const MyInfoContainer = () => {
     des=null
   }
 
+
+  const infoAni = {
+    hidden:{
+      width:0,
+      height:'5vh',
+      transition:{duration:.1}
+    },
+    visible:{
+      width: '82%',
+      height:'67vh',
+      transition:{delay:1,duration:.5}
+    },
+  }
+
+  const headerAin = {
+    hidden:{
+      y:-300,
+      opacity:0
+    },
+    visible:{
+      y:0,
+      opacity:1,
+      transition:{duration:.5,delay:1}
+    }
+  }
+
   return (
     <InfoContainer>
-      <h1>Hello, I’m Paing Sett Kyaw (Call me Paing)!</h1>
-      <motion.div className="info">
+      <motion.h1 variants={headerAin} initial='hidden' animate='visible'>Hello, I’m Paing Sett Kyaw (Call me Paing)!</motion.h1>
+      <motion.div className="info" key='info-container' variants={infoAni} initial='hidden' animate='visible' exit='hidden'>
         <InfoDescription  line={des} />
         <div className="profile_img">
           <img src="/src/assets/img/profile-photo.png" height="100%" />

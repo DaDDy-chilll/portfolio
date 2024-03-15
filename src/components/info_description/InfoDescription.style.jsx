@@ -18,6 +18,7 @@ const Description = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
 
    .btn{
     font-family: "Madimi One", sans-serif;

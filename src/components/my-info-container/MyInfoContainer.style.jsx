@@ -12,6 +12,8 @@ const InfoContainer = styled.div`
     font-size: 3rem;
     margin: 0;
     margin-bottom: 1%;
+    white-space: nowrap;
+    text-align: center;
   }
 
   .info {

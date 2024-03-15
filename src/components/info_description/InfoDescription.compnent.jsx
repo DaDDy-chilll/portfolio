@@ -3,13 +3,12 @@
 import { motion } from "framer-motion";
 import Description from "./InfoDescription.style";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 const API = import.meta.env.VITE_API;
-
-
-
 
 const InfoDescription = ({ line }) => {
   const { line1, line2, line3, line4 } = line;
+  const { menu6 } = useSelector((state) => state.aboutState);
   const navigate = useNavigate();
 
   const touchHandler = () => navigate("/contact");
@@ -69,11 +68,19 @@ const InfoDescription = ({ line }) => {
         </motion.p>
       )}
       <div className="btn_gp">
-      <a href={`${API}/api/v1/cv/download`}  className="cv_btn btn">Download CV</a>
-        
-        <div className="touch_btn btn" onClick={touchHandler}>
+        <a href={`${API}/api/v1/cv/download`} className="cv_btn btn">
+          Download CV
+        </a>
+
+        <motion.div
+        key='touch_btn'
+          className="touch_btn btn"
+          onClick={touchHandler}
+          initial={{ y: 100, opacity: 0 }}
+          animate={menu6 ? { y: 0, opacity: 1 }:null}
+        >
           Touch Me
-        </div>
+        </motion.div>
       </div>
     </Description>
   );
