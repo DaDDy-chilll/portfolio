@@ -68,16 +68,28 @@ const InfoDescription = ({ line }) => {
         </motion.p>
       )}
       <div className="btn_gp">
-        <a href={`${API}/api/v1/cv/download`} className="cv_btn btn">
+        <motion.a
+          href={`${API}/api/v1/cv/download`}
+          className="cv_btn btn"
+          initial={{ x: -300 }}
+          animate={{
+            x: 0,
+            transition: {
+              delay: 1.5,
+              duration: 0.1,
+              ease:"easeOut",type:'spring',stiffness:300
+            },
+          }}
+        >
           Download CV
-        </a>
+        </motion.a>
 
         <motion.div
-        key='touch_btn'
+          key="touch_btn"
           className="touch_btn btn"
           onClick={touchHandler}
           initial={{ y: 100, opacity: 0 }}
-          animate={menu6 ? { y: 0, opacity: 1 }:null}
+          animate={menu6 ? { y: 0, opacity: 1 } : null}
         >
           Touch Me
         </motion.div>
