@@ -3,9 +3,11 @@ import { InfoContainer } from "./MyInfoContainer.style";
 import InfoMenuList from "../info_menu_list/InfoMenuList.compnent";
 import InfoDescription from "../info_description/InfoDescription.compnent";
 import { useSelector } from "react-redux";
+import { motion } from "framer-motion";
 
 
 const MyInfoContainer = () => {
+  let des;
   const { menu1, menu2, menu3, menu4, menu5,menu6 } = useSelector((state) => state.aboutState);
   const myinfo = [
     {
@@ -79,7 +81,6 @@ const MyInfoContainer = () => {
 
     },
   ];
-  let des;
 
   if(menu1){
     des=myinfo[0].description
@@ -105,12 +106,12 @@ const MyInfoContainer = () => {
   return (
     <InfoContainer>
       <h1>Hello, I’m Paing Sett Kyaw (Call me Paing)!</h1>
-      <div className="info">
+      <motion.div className="info">
         <InfoDescription  line={des} />
         <div className="profile_img">
           <img src="/src/assets/img/profile-photo.png" height="100%" />
         </div>
-      </div>
+      </motion.div>
       <div className="info_menu">
         {myinfo.map((info, i) => <InfoMenuList key={i} title={info.title} i={i} active={info.isActive} />)}
       </div>

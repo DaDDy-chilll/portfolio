@@ -32,6 +32,7 @@ const Description = styled.div`
    .cv_btn{
     color:white;
     background-color: #2b20fa;
+    text-decoration: none;
 
     &:hover{
       color:#2b20fa;

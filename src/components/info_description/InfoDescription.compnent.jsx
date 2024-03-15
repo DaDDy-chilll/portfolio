@@ -1,10 +1,12 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import Description from "./InfoDescription.style";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
-import fileDownload from 'js-file-download'
-const API = axios.create({baseURL:'/api/v1'})
+const API = import.meta.env.VITE_API;
+
+
+
 
 const InfoDescription = ({ line }) => {
   const { line1, line2, line3, line4 } = line;
@@ -12,11 +14,6 @@ const InfoDescription = ({ line }) => {
 
   const touchHandler = () => navigate("/contact");
 
-  const downloadCVHander = async () => {
-    const res = await API('/cv/download',{responseType:"blob"})
-    const file =  res.data;
-    fileDownload(file,'PAING-SETT-KYAW.pdf')
-  };
   return (
     <Description>
       {line1 && (
@@ -72,7 +69,8 @@ const InfoDescription = ({ line }) => {
         </motion.p>
       )}
       <div className="btn_gp">
-        <div className="cv_btn btn" onClick={downloadCVHander}>Dowload CV</div>
+      <a href={`${API}/api/v1/cv/download`}  className="cv_btn btn">Download CV</a>
+        
         <div className="touch_btn btn" onClick={touchHandler}>
           Touch Me
         </div>
