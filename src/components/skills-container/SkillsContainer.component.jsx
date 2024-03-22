@@ -6,14 +6,21 @@ const skills = [
   {
     id:1,
     name: 'HTML',
+    top: '27%',
+    left: '-4%',
   },
   {
     id:2,
     name: 'CSS',
+    top: '-3%',
+    left: '-4%',
+
   },
   {
     id:3,
     name: 'JS',
+    top: '56%',
+    left: '-4%',
   },
   {
     id:4,
@@ -24,14 +31,14 @@ const skills = [
   {
     id:5,
     name: 'REACTJS',
-    top: '-3%',
-    left: '-4%',
+    top: '12%',
+    left: '13%',
   },
   {
     id:6,
     name: 'JAVA',
-    top: '12%',
-    left: '13%',
+    top: '41.5%',
+    left: '14%',
   },
   {
     id:7,
