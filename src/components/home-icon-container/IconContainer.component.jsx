@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
 import Container from "./IconContainer.style";
-import { 
+
+import {
   HtmlIcon,
   CodeIcon,
   CssIcon,
@@ -18,142 +20,145 @@ import {
   JsIcon,
   LinuxIcon,
   NetworkIcon,
- } from "@assets";
+} from "@assets";
 
- const Icons = [
+const Icons = [
   {
-    id:1,
+    id: 1,
     element: <HtmlIcon />,
-    top: '-63px',
-    left: '-190px',
+    top: "-63px",
+    left: "-190px",
   },
   {
-    id:2,
+    id: 2,
     element: <CssIcon />,
-    top: '-40px',
-    left: '-137px',
+    top: "-40px",
+    left: "-137px",
   },
   {
-    id:3,
+    id: 3,
     element: <JsIcon />,
-    top: '-76px',
-    left: '-98px',
+    top: "-76px",
+    left: "-98px",
   },
   {
-    id:4,
+    id: 4,
     element: <NodejsIcon />,
-    top: '-164px',
-    left: '-21px',
+    top: "-164px",
+    left: "-21px",
   },
   {
-    id:5,
+    id: 5,
     element: <MysqlIcon />,
-    top: '-52px',
-    left: '-21px',
+    top: "-52px",
+    left: "-21px",
   },
   {
-    id:6,
+    id: 6,
     element: <MongoIcon />,
-    top: '-100px',
-    left: '-21px',
+    top: "-100px",
+    left: "-21px",
   },
   {
-    id:7,
+    id: 7,
     element: <PhpIcon />,
-    top: '-171px',
-    left: '-78px',
+    top: "-171px",
+    left: "-78px",
   },
   {
-    id:8,
+    id: 8,
     element: <ReactIcon />,
-    top: '-79px',
-    left: '103px',
+    top: "-79px",
+    left: "103px",
   },
   {
-    id:9,
+    id: 9,
     element: <SassIcon />,
-    top: '-107px',
-    left: '-178px',
+    top: "-107px",
+    left: "-178px",
   },
   {
-    id:10,
+    id: 10,
     element: <CodeIcon />,
-    top: '-113px',
-    left: '105px',
+    top: "-113px",
+    left: "105px",
   },
   {
-    id:11,
+    id: 11,
     element: <DbIcon />,
-    top: '-56px',
-    left: '38px',
+    top: "-56px",
+    left: "38px",
   },
   {
-    id:12,
+    id: 12,
     element: <FigmaIcon />,
-    top: '-99px',
-    left: '-146px',
+    top: "-99px",
+    left: "-146px",
   },
   {
-    id:13,
+    id: 13,
     element: <GitIcon />,
-    top: '-115px',
-    left: '-102px',
+    top: "-115px",
+    left: "-102px",
   },
   {
-    id:14,
+    id: 14,
     element: <GitBranchIcon />,
-    top: '-148px',
-    left: '53px',
+    top: "-148px",
+    left: "53px",
   },
   {
-    id:15,
+    id: 15,
     element: <GitPullIcon />,
-    top: '-103px',
-    left: '10px',
+    top: "-103px",
+    left: "10px",
   },
   {
-    id:16,
+    id: 16,
     element: <JavaIcon />,
-    top: '-120px',
-    left: '59px',
+    top: "-120px",
+    left: "59px",
   },
   {
-    id:17,
+    id: 17,
     element: <LinuxIcon />,
-    top: '-148px',
-    left: '-111px',
+    top: "-148px",
+    left: "-111px",
   },
   {
-    id:18,
+    id: 18,
     element: <NetworkIcon />,
-    top: '-131px',
-    left: '-135px',
+    top: "-131px",
+    left: "-135px",
   },
-
- ]
+];
 
 const IconContainer = () => {
   return (
     <Container>
-     <HtmlIcon />
-     <CodeIcon />
-     <CssIcon />
-     <DbIcon />
-     <FigmaIcon />
-     <GitBranchIcon />
-     <GitPullIcon />
-     <GitIcon />
-     <GitPullIcon />
-     <JavaIcon />
-     <MongoIcon />
-     <MysqlIcon />
-     <NodejsIcon />
-     <ReactIcon />
-     <SassIcon />
-     <PhpIcon />
-     <JsIcon />
-     <LinuxIcon />
-     <NetworkIcon />
+      {Icons.map(({ id, element, top, left }) => {
+        return (
+          <motion.span
+            key={id}
+            style={{ position: "absolute", top, left }}
+            initial={{ y: "100px", opacity: 0 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: `2.${id}`,
+                duration: 0.5,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 400,
+              },
+            }}
+            exit={{ opacity: 0, scale: 0, transition: { duration: 0.3 } }}
+          >
+            {element}
+          </motion.span>
+        );
+      })}
     </Container>
   );
 };

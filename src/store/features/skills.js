@@ -10,7 +10,6 @@ const skills = createSlice({
     reducers:{
         skillActive:(state,action) => {
             state.activeName= action.payload;
-            
         }
     }
 

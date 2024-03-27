@@ -29,6 +29,8 @@ import {
   JsIcon,
   LinuxIcon,
   NetworkIcon,
+  AiIcon,
+  FirebaseIcon,
 } from "./img/home";
 import {
   ContactCenter,
@@ -78,4 +80,6 @@ export {
   ContactSideTinyRight,
   ContactSideTinySmallLeft,
   ContactSideTinySmallRight,
+  AiIcon,
+  FirebaseIcon,
 };
