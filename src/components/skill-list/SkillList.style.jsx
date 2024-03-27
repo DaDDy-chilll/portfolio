@@ -1,11 +1,11 @@
 import { styled } from "styled-components";
 
 const List = styled.div`
-     width: 32%;
-    height: 27%;
+  width: 32%;
+  height: 27%;
   position: absolute;
-  top: ${props => props.$top};
-  left: ${props => props.$left};
+  top: ${(props) => props.$top};
+  left: ${(props) => props.$left};
 
   .skill_item {
     width: 100%;
@@ -16,13 +16,30 @@ const List = styled.div`
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.2s;
 
     p {
       color: white;
-      z-index: 1;
       font-family: "Monomaniac One", sans-serif;
       font-size: 1.6rem;
+      transition: all 0.2s;
     }
+
+    &:hover p {
+      color: var(--secondary-color);
+      font-size: 2rem;
+    }
+
+    &:hover {
+      background-color: var(--primary-color);
+      border: 10px solid var(--secondary-color);
+      transform: scale(1.1);
+    }
+
+    &:active{
+      transform: scale(.9);
+    }
+    
   }
 `;
 

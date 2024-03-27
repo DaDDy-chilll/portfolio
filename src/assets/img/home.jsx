@@ -34,12 +34,11 @@ const HtmlIcon = () => {
   );
 };
 
-const HTML = styled.svg`
-  position: absolute;
-
-  top: -63px;
-  left: -190px;
-`;
+// const HTML = styled.svg`
+//   position: absolute;
+//   top: -63px;
+//   left: -190px;
+// `;
 
 const CssIcon = () => {
   return (
@@ -74,11 +73,11 @@ const CssIcon = () => {
   );
 };
 
-const CSS = styled.svg`
-  position: absolute;
-  top: -40px;
-  left: -137px;
-`;
+// const CSS = styled.svg`
+//   position: absolute;
+//   top: -40px;
+//   left: -137px;
+// `;
 
 const JsIcon = () => {
   return (
@@ -113,11 +112,11 @@ const JsIcon = () => {
   );
 };
 
-const JS = styled.svg`
-  position: absolute;
-  top: -76px;
-  left: -98px;
-`;
+// const JS = styled.svg`
+//   position: absolute;
+//   top: -76px;
+//   left: -98px;
+// `;
 
 const NodejsIcon = () => {
   return (
@@ -160,11 +159,11 @@ const NodejsIcon = () => {
   );
 };
 
-const NODE = styled.svg`
-  position: absolute;
-  top: -164px;
-  left: -21px;
-`;
+// const NODE = styled.svg`
+//   position: absolute;
+//   top: -164px;
+//   left: -21px;
+// `;
 
 const MysqlIcon = () => {
   return (
@@ -211,11 +210,11 @@ const MysqlIcon = () => {
   );
 };
 
-const MYSQL = styled.svg`
-  position: absolute;
-  top: -52px;
-  left: -21px;
-`;
+// const MYSQL = styled.svg`
+//   position: absolute;
+//   top: -52px;
+//   left: -21px;
+// `;
 
 const MongoIcon = () => {
   return (
@@ -250,11 +249,11 @@ const MongoIcon = () => {
   );
 };
 
-const MONGO = styled.svg`
-  position: absolute;
-  top: -100px;
-  left: -21px;
-`;
+// const MONGO = styled.svg`
+//   position: absolute;
+//   top: -100px;
+//   left: -21px;
+// `;
 
 const PhpIcon = () => {
   return (
@@ -289,11 +288,11 @@ const PhpIcon = () => {
   );
 };
 
-const PHP = styled.svg`
-  position: absolute;
-  top: -171px;
-  left: -78px;
-`;
+// const PHP = styled.svg`
+//   position: absolute;
+//   top: -171px;
+//   left: -78px;
+// `;
 
 const ReactIcon = () => {
   return (
@@ -332,11 +331,11 @@ const ReactIcon = () => {
   );
 };
 
-const REACT = styled.svg`
-  position: absolute;
-  top: -79px;
-  left: 103px;
-`;
+// const REACT = styled.svg`
+//   position: absolute;
+//   top: -79px;
+//   left: 103px;
+// `;
 
 const SassIcon = () => {
   return (
@@ -375,11 +374,11 @@ const SassIcon = () => {
   );
 };
 
-const SASS = styled.svg`
-  position: absolute;
-  top: -107px;
-  left: -178px;
-`;
+// const SASS = styled.svg`
+//   position: absolute;
+//   top: -107px;
+//   left: -178px;
+// `;
 
 const CodeIcon = () => {
   return (
@@ -414,11 +413,11 @@ const CodeIcon = () => {
   );
 };
 
-const CODE = styled.svg`
-  position: absolute;
-  top: -113px;
-  left: 105px;
-`;
+// const CODE = styled.svg`
+//   position: absolute;
+//   top: -113px;
+//   left: 105px;
+// `;
 
 const DbIcon = () => {
   return (
@@ -457,11 +456,11 @@ const DbIcon = () => {
   );
 };
 
-const DB = styled.svg`
-  position: absolute;
-  top: -56px;
-  left: 38px;
-`;
+// const DB = styled.svg`
+//   position: absolute;
+//   top: -56px;
+//   left: 38px;
+// `;
 
 const FigmaIcon = () => {
   return (
@@ -520,11 +519,11 @@ const FigmaIcon = () => {
   );
 };
 
-const FIGMA = styled.svg`
-  position: absolute;
-  top: -99px;
-  left: -146px;
-`;
+// const FIGMA = styled.svg`
+//   position: absolute;
+//   top: -99px;
+//   left: -146px;
+// `;
 
 const GitIcon = () => {
   return (
@@ -559,11 +558,11 @@ const GitIcon = () => {
   );
 };
 
-const GIT = styled.svg`
-  position: absolute;
-  top: -115px;
-  left: -102px;
-`;
+// const GIT = styled.svg`
+//   position: absolute;
+//   top: -115px;
+//   left: -102px;
+// `;
 
 const GitBranchIcon = () => {
   return (
@@ -598,11 +597,11 @@ const GitBranchIcon = () => {
   );
 };
 
-const GITBRANCH = styled.svg`
-  position: absolute;
-  top: -148px;
-  left: 53px;
-`;
+// const GITBRANCH = styled.svg`
+//   position: absolute;
+//   top: -148px;
+//   left: 53px;
+// `;
 
 const GitPullIcon = () => {
   return (
@@ -637,11 +636,11 @@ const GitPullIcon = () => {
   );
 };
 
-const GITPULL = styled.svg`
-  position: absolute;
-  top: -103px;
-  left: 10px;
-`;
+// const GITPULL = styled.svg`
+//   position: absolute;
+//   top: -103px;
+//   left: 10px;
+// `;
 
 const JavaIcon = () => {
   return (
@@ -692,11 +691,11 @@ const JavaIcon = () => {
   );
 };
 
-const JAVA = styled.svg`
-  position: absolute;
-  top: -120px;
-  left: 59px;
-`;
+// const JAVA = styled.svg`
+//   position: absolute;
+//   top: -120px;
+//   left: 59px;
+// `;
 
 const LinuxIcon = () => {
   return (
@@ -730,12 +729,12 @@ const LinuxIcon = () => {
   );
 };
 
-const LINUX = styled.svg`
-  position: absolute;
+// const LINUX = styled.svg`
+//   position: absolute;
 
-  top: -148px;
-  left: -111px;
-`;
+//   top: -148px;
+//   left: -111px;
+// `;
 
 const NetworkIcon = () => {
   return (
@@ -769,11 +768,11 @@ const NetworkIcon = () => {
   );
 };
 
-const NETWORK = styled.svg`
-  position: absolute;
-  top: -131px;
-  left: -135px;
-`;
+// const NETWORK = styled.svg`
+//   position: absolute;
+//   top: -131px;
+//   left: -135px;
+// `;
 
 export {
   HtmlIcon,
