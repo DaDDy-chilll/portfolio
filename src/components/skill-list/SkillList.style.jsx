@@ -15,9 +15,13 @@ const List = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
     p {
       color: white;
       z-index: 1;
+      font-family: "Monomaniac One", sans-serif;
+      font-size: 1.6rem;
     }
   }
 `;

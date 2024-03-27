@@ -5,6 +5,7 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: .4% 1%;
+    z-index: 10;
 `
 
 export {Nav}
