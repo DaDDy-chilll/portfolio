@@ -19,9 +19,17 @@ const List = styled.div`
     flex-direction: column;
     cursor: pointer;
     transition: all 0.2s;
+    position: relative;
 
     .icon{
-      width: 20%;
+      width: 30%;
+      z-index: 10;
+      position: absolute;
+      bottom: 0;
+      svg{
+        width: 100%;
+        fill: white;
+      }
     }
 
     p {
@@ -29,6 +37,7 @@ const List = styled.div`
       font-family: "Monomaniac One", sans-serif;
       font-size: 1.6rem;
       transition: all 0.2s;
+      margin: 0;
     }
 
     &:hover p {
