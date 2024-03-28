@@ -25,6 +25,7 @@ const SkillList = ({ name, top, left, id, isActive, icon }) => {
           stiffness: 70,
         },
       }}
+    exit
     >
       <div className="skill_item" onClick={skillButton}>
         <motion.p
