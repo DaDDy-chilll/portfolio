@@ -41,10 +41,10 @@ const SkillList = ({ name, top, left, id, isActive, icon }) => {
         </motion.p>
         <motion.span
           className="icon"
-          // initial={{ y: 100, opacity: 0 }}
-          // animate={isActive  && { y: 0, opacity: 1, transition: { duration: 0.5 }}  }
-          // $isActive={isActive}
-          // exit={{y:0,opacity:1,transition:{duration:.5}}}
+          initial={ { y: -100, opacity: 0 }}
+          animate={isActive ? { y: 0, opacity: 1, transition: { duration: 0.5 }} :{ y: -100, opacity: 0 } }
+          $isActive={isActive}
+          exit={{y:0,opacity:1,transition:{duration:.5}}}
         >
           {icon}
         </motion.span>

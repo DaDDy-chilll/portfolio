@@ -25,7 +25,7 @@ const List = styled.div`
       width: 30%;
       z-index: 10;
       position: absolute;
-      bottom: 0;
+      bottom: 30%;
       svg{
         width: 100%;
         fill: white;
