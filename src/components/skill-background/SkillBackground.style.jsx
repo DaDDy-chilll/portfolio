@@ -16,7 +16,8 @@ const TriangleContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  z-index: -1;
+    z-index: -1;
+    
     
     .bottomtriangle {
       border-left: 500px solid transparent;
@@ -24,6 +25,9 @@ const TriangleContainer = styled.div`
       border-bottom: 400px solid var(--secondary-color);
       filter: drop-shadow(0 -10px white);
       margin-top: 0.5%;
+      position: relative;
+
+
     }
 
     .uptriangle {
@@ -32,6 +36,12 @@ const TriangleContainer = styled.div`
       border-top: 400px solid var(--secondary-color);
       filter: drop-shadow(0 10px white);
       margin-bottom: 0.5%;
+      position: relative;
+
+      .active_icon{
+        position: absolute;
+        top: -291px;
+      }
     }
   }
 

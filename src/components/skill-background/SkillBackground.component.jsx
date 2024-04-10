@@ -13,8 +13,9 @@ const SkillBackground = () => {
         animate={{ y: 0, transition: { duration: 0.5 } }}
         exit={{ y: -300, opacity: 0 }}
       >
-      {/* active icon */}
-        <p style={{color:'white',textAlign:'start'}}>hello world</p>
+      <div className="active_icon">
+        hello world
+      </div>
       </motion.div>
 
       <motion.div
@@ -23,8 +24,6 @@ const SkillBackground = () => {
         animate={{ y: 0, transition: { duration: 0.5 } }}
         exit={{ y: 300, opacity: 0 }}
       >
-      {/* see project button */}
-        <div style={{color:"white"}}>see projects</div> 
       </motion.div>
     </div>
     <motion.div

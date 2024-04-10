@@ -25,7 +25,7 @@ const SkillList = ({ name, top, left, id, isActive, icon }) => {
           stiffness: 70,
         },
       }}
-    exit
+    exit={{rotateY:180,opacity:0,transition:{duration:0.2}}}
     >
       <div className="skill_item" onClick={skillButton}>
         <motion.p

@@ -1,11 +1,12 @@
 import { styled } from "styled-components";
 
 const List = styled.div`
-  width: 32%;
-  height: 27%;
+  width: 34.5%;
+  height: 28%;
   position: absolute;
   top: ${(props) => props.$top};
   left: ${(props) => props.$left};
+  user-select: none;
 
   .skill_item {
     width: 100%;
@@ -43,6 +44,8 @@ const List = styled.div`
     &:hover p {
       color: var(--secondary-color);
       font-size: 2rem;
+      filter: drop-shadow( 0 0 10px black);
+
     }
 
     &:hover {
