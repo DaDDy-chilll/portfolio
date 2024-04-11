@@ -13,9 +13,6 @@ const SkillBackground = () => {
         animate={{ y: 0, transition: { duration: 0.5 } }}
         exit={{ y: -300, opacity: 0 }}
       >
-      <div className="active_icon">
-        hello world
-      </div>
       </motion.div>
 
       <motion.div

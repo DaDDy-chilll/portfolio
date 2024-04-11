@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const  initialState = {
-    activeName:'',
+    activeName:'HTML',
     activeImg:'',
 }
 const skills = createSlice({

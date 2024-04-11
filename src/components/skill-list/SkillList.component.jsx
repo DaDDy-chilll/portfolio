@@ -20,7 +20,7 @@ const SkillList = ({ name, top, left, id, isActive, icon }) => {
         x: 0,
         transition: {
           duration: 0.5,
-          delay: `.${id}`,
+          delay: `1.${id}`,
           type: "spring",
           stiffness: 70,
         },

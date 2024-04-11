@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+const windowWidth = window.innerWidth / 2 - 71;
 
 const TriangleContainer = styled.div`
   position: absolute;
@@ -39,8 +40,11 @@ const TriangleContainer = styled.div`
       position: relative;
 
       .active_icon{
+        color: white;
+        filter: none;
         position: absolute;
         top: -291px;
+        left: ${windowWidth}px;
       }
     }
   }

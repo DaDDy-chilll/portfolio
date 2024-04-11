@@ -21,6 +21,7 @@ const List = styled.div`
     cursor: pointer;
     transition: all 0.2s;
     position: relative;
+    z-index: 10;
 
     .icon{
       width: 30%;

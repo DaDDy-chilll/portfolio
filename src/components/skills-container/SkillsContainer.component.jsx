@@ -119,7 +119,9 @@ const SkillsContainer = () => {
           />
         ))}
       </div>
-      <div className="skill_percent"></div>
+      <div className="skill_percent">
+        
+      </div>
     </Container>
   );
 };
