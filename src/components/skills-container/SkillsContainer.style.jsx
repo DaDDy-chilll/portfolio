@@ -6,8 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  .skill_lists,
-  .skill_percent {
+  .skill_lists{
     width: 50%;
     height: 100%;
     position: relative;
