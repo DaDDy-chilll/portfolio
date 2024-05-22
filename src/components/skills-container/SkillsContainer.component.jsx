@@ -120,7 +120,8 @@ const SkillsContainer = () => {
         ))}
       </div>
       <div className="skill_percent">
-        
+        <div className="wave"></div>
+        <div className="wave"></div>
       </div>
     </Container>
   );

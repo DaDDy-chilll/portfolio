@@ -115,3 +115,39 @@ export const CenterBlock = () => {
     </svg>
   );
 };
+
+export const WaveOne = () => {
+  return (
+    <svg
+      width="359"
+      height="77"
+      viewBox="0 0 359 77"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M115.5 44.1126C175.5 77.1124 199 23.9012 251.5 5.1126C304 -13.676 359 25.3673 359 25.3673V76.5H0V25.3673C0 25.3673 55.5 11.1128 115.5 44.1126Z"
+        fill="#191919"
+        fillOpacity="0.8"
+      />
+    </svg>
+  );
+};
+
+export const WaveTwo = () => {
+  return (
+    <svg
+      width="359"
+      height="81"
+      viewBox="0 0 359 81"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M110.911 6.01708C124.531 28.8657 144.962 66.2986 216.957 40.5331C288.951 14.7677 359 32.7548 359 32.7548V80.7783H0V32.7548C0 32.7548 97.29 -16.8316 110.911 6.01708Z"
+        fill="black"
+        fillOpacity="0.8"
+      />
+    </svg>
+  );
+};
