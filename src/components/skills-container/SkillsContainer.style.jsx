@@ -44,28 +44,32 @@ const Container = styled.div`
       }
 
       &:nth-child(1) {
-        background: url("/src/assets/img/wave1.svg");
+        background: url("/src/assets/img/wave_one.svg");
         background-repeat: repeat-x;
         position: absolute;
         bottom: 0;
         width: 1000%;
         height: 60%;
-        /* animation: wave 30s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite; */
+        animation: wave 70s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite reverse;
         transform: translateX(0) translate3d(0, 0, 0);
-        background-color: red;
-        opacity: 0.8;
+        /* background-color: red; */
+        opacity: 1;
+        z-index: 99;
 
       }
 
       &:nth-child(2) {
-        background: url("/src/assets/img/wave2.svg") repeat-x;
+        background: url("/src/assets/img/wave_two.svg");
+        background-repeat: repeat-x;
+
         position: absolute;
         bottom: 0;
         width: 1000%;
-        height: 30%;
-        /* animation: wave 25s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite; */
-        opacity: 0;
+        height: 58%;
+        animation: wave 50s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite ;
+        opacity: 1;
         transform: translateX(0) translate3d(0, 0, 0);
+        z-index: -1;
       }
     }
   }
