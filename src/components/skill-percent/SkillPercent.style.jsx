@@ -56,7 +56,7 @@ const Precent = styled.div`
     top: 42%;
     font-family: "Monomaniac One", sans-serif;
     font-size: 2rem;
-    color: black;
+    color: ${props => (45 - props.$activePrecent) <= -5 ? 'white' : 'black'};
   }
 `;
 export default Precent;

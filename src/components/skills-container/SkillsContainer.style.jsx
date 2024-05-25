@@ -6,6 +6,8 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  /* background-color: red; */
   /* flex-wrap: wrap; */
 
   .skill_lists {
@@ -14,56 +16,36 @@ const Container = styled.div`
     position: relative;
   }
 
-  .skill_percent {
-    width: 300px;
-    height: 300px;
-    margin: 0 5% 10%;
-    border-radius: 100%;
-    border: 2px solid var(--secondary-color);
-    overflow: hidden;
-    position: relative;
+  .see_more{
+    position: absolute;
+    left: ${props => props.$windowWidth - (253 / 2) }px;
+    bottom: 24%;
+    width: 253px;
+    height: 202px;
+    background-color: var(--primary-color);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
-    .wave {
-      position: relative;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: var(--secondary-color);
-      border-radius: 50%;
-      box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: "Monomaniac One", sans-serif;
+    border: none;
+    transition: all .2s;
 
-      &:before,
-      &:after {
-        content: "";
-        position: absolute;
-        top: 50%; //change skill percent
-        left: 50%;
-        width: 200%;
-        height: 200%;
-        background: black;
-        transform: translate(-50%, -75%);
-      }
-      &:before {
-        border-radius: 45%;
-        background: rgba(255, 255, 255, 1);
-        animation: animate 5s linear infinite;
-      }
-      &:after {
-        border-radius: 40%;
-        background: rgba(255, 255, 255, 0.5);
-        animation: animate 10s linear infinite;
-      }
+    &:hover{
+      cursor: pointer;
+      color: var(--primary-color);
+      background-color: var(--secondary-color);
+      border: 20px solid white;
+    }
 
-      @keyframes animate {
-        0% {
-          transform: translate(-50%, -75%) rotate(0deg);
-        }
-        100% {
-          transform: translate(-50%, -75%) rotate(360deg);
-        }
-      }
+    &:active{
+      transform: translateY(5px);
     }
   }
+
 `;
 
 export default Container;

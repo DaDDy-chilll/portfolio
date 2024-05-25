@@ -1,13 +1,13 @@
-import {css, styled} from 'styled-components'
+import { css, styled } from "styled-components";
 
 const Wrapper = styled.div`
-  z-index: 10;
+  z-index: 9;
 
-span{
+  span {
     text-align: center;
-}
+  }
 
-p{
+  p {
     text-transform: uppercase;
     font-family: "Monomaniac One", sans-serif;
     font-weight: bolder;
@@ -15,31 +15,29 @@ p{
     margin: 20% 0;
     user-select: none;
 
-    ${props => {
-        if(props.$name === 'about'){
-            return css`
-            color: var(--primary-color);
-            `
-        }else{
-            return css`
-            color: var(--secondary-color);
-            `
-        }
+    ${(props) => {
+      if (props.$name === "about") {
+        return css`
+          color: var(--primary-color);
+        `;
+      } else {
+        return css`
+          color: var(--secondary-color);
+        `;
+      }
     }}
-}
+  }
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  position: absolute;
+  right: 2%;
+  /* top:${(props) => props.height}px */
+  height: calc(100% - 67px);
+  overflow: hidden;
+`;
 
-    position: absolute;
-    right: 2%;
-    /* top:${props => props.height}px */
-height: calc(100% - 67px);
-overflow: hidden;
-
-`
-
-export {Wrapper}
+export { Wrapper };
