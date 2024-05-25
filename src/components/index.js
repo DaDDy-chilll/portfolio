@@ -11,6 +11,7 @@ import IconContainer from "./home-icon-container/IconContainer.component";
 import MyInfoContainer from "./my-info-container/MyInfoContainer.component";
 import SkillBackground from "./skill-background/SkillBackground.component";
 import SkillsContainer from "./skills-container/SkillsContainer.component";
+import SkillPercent from "./skill-percent/SkillPercent.component";
 
 export {
   Navbar,
@@ -26,4 +27,5 @@ export {
   MyInfoContainer,
   SkillBackground,
   SkillsContainer,
+  SkillPercent,
 };

@@ -2,14 +2,15 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const  initialState = {
     activeName:'HTML',
-    activeImg:'',
+    activePrecent:0,
 }
 const skills = createSlice({
     name:'skills',
     initialState,
     reducers:{
         skillActive:(state,action) => {
-            state.activeName= action.payload;
+            state.activeName= action.payload.name;
+            state.activePrecent = action.payload.percent;
         }
     }
 

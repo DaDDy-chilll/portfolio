@@ -1,21 +1,7 @@
-import { styled } from "styled-components";
+import {styled} from 'styled-components'
 
-const Container = styled.div`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* flex-wrap: wrap; */
-
-  .skill_lists {
-    width: 50%;
-    height: 100%;
-    position: relative;
-  }
-
-  .skill_percent {
-    width: 300px;
+const Precent = styled.div`
+ width: 300px;
     height: 300px;
     margin: 0 5% 10%;
     border-radius: 100%;
@@ -63,7 +49,6 @@ const Container = styled.div`
         }
       }
     }
-  }
-`;
 
-export default Container;
+`
+export default Precent;

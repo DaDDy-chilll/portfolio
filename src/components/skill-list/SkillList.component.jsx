@@ -1,13 +1,13 @@
+/* eslint-disable no-unused-vars */
 import List from "./SkillList.style";
 import { motion } from "framer-motion";
 import { skillActive } from "@store";
 import { useDispatch } from "react-redux";
 
 /* eslint-disable react/prop-types */
-
-const SkillList = ({ name, top, left, id, isActive, icon }) => {
+const SkillList = ({ name, top, left, id, isActive, icon,percent }) => {
   const dispatch = useDispatch();
-  const skillButton = () => dispatch(skillActive(name));
+  const skillButton = () => dispatch(skillActive({name,percent}));
   return (
     <List
       key={id}
