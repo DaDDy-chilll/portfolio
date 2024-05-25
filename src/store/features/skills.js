@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const  initialState = {
     activeName:'HTML',
-    activePrecent:0,
+    activePrecent:80,
 }
 const skills = createSlice({
     name:'skills',

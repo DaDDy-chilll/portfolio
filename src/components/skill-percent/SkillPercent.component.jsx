@@ -1,11 +1,14 @@
+/* eslint-disable no-unused-vars */
 import { useSelector } from "react-redux";
 import Precent from "./SkillPercent.style";
 
 const SkillPercent = () => {
-    const {precent} = useSelector(state => state.skillsState)
+    const {activePrecent} = useSelector(state => state.skillsState);
+  
   return (
-    <Precent>
+    <Precent $activePrecent={activePrecent}>
       <div className="wave"></div>
+      <div className="percent_text">{activePrecent}%</div>
     </Precent>
   );
 };
