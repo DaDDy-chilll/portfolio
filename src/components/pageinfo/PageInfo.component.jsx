@@ -12,7 +12,7 @@ const PageInfo = () => {
 
   useEffect(() => {
     dispatch(changeInfo(pathname));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
   return (

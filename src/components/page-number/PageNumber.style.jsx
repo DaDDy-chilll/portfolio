@@ -32,43 +32,55 @@ const Number = styled.div`
     border-radius: 5px;
 
     .icon {
-      ${props => {
-        if(props.$name === 'about' || props.$name === 'skills' || props.$name === 'contact'){
+      ${(props) => {
+        if (
+          props.$name === "about" ||
+          props.$name === "skills" ||
+          props.$name === "contact"
+        ) {
           return css`
             color: var(--primary-color);
-          `
-        }else{
+          `;
+        } else {
           return css`
             color: var(--secondary-color);
-          `
+          `;
         }
       }}
     }
 
     &:hover {
-      ${props => {
-        if(props.$name === 'about' || props.$name === 'skills' || props.$name === 'contact'){
+      ${(props) => {
+        if (
+          props.$name === "about" ||
+          props.$name === "skills" ||
+          props.$name === "contact"
+        ) {
           return css`
             background-color: var(--primary-color);
-          `
-        }else{
+          `;
+        } else {
           return css`
             background-color: var(--secondary-color);
-          `
+          `;
         }
       }}
       .icon {
-        ${props => {
-        if(props.$name === 'about' || props.$name === 'skills' || props.$name === 'contact'){
-          return css`
-            color: var(--secondary-color);
-          `
-        }else{
-          return css`
-            color: var(--primary-color);
-          `
-        }
-      }}
+        ${(props) => {
+          if (
+            props.$name === "about" ||
+            props.$name === "skills" ||
+            props.$name === "contact"
+          ) {
+            return css`
+              color: var(--secondary-color);
+            `;
+          } else {
+            return css`
+              color: var(--primary-color);
+            `;
+          }
+        }}
       }
     }
   }

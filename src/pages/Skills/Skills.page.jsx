@@ -1,6 +1,4 @@
-import { SkillBackground,SkillsContainer } from "@components";
-
-
+import { SkillBackground, SkillsContainer } from "@components";
 
 const Skills = () => {
   document.body.style.backgroundColor = "var(--primary-color)";

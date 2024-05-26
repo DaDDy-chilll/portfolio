@@ -16,9 +16,9 @@ const Container = styled.div`
     position: relative;
   }
 
-  .see_more{
+  .see_more {
     position: absolute;
-    left: ${props => props.$windowWidth - (253 / 2) }px;
+    left: ${(props) => props.$windowWidth - 253 / 2}px;
     bottom: 24%;
     width: 253px;
     height: 202px;
@@ -32,20 +32,19 @@ const Container = styled.div`
     font-size: 1.6rem;
     font-family: "Monomaniac One", sans-serif;
     border: none;
-    transition: all .2s;
+    transition: all 0.2s;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       color: var(--primary-color);
       background-color: var(--secondary-color);
       border: 20px solid white;
     }
 
-    &:active{
+    &:active {
       transform: translateY(5px);
     }
   }
-
 `;
 
 export default Container;

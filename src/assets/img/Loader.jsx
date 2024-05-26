@@ -1,31 +1,31 @@
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 const svgVariants = {
-    hidden:{},
-    visibale:{transition:{delay:2}}
-}
+  hidden: {},
+  visibale: { transition: { delay: 2 } },
+};
 
 const pathVariants = {
-    hidden:{
-        opacity:0,
-        pathLength:0
+  hidden: {
+    opacity: 0,
+    pathLength: 0,
+  },
+  visible: {
+    opacity: 1,
+    pathLength: 1,
+    transition: {
+      delpay: 2,
+      duration: 2,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "reverse",
     },
-    visible:{
-        opacity:1,
-        pathLength:1,
-        transition:{
-            delpay:2,
-            duration:2,
-            ease:'easeInOut',
-            repeat:Infinity,
-            repeatType: "reverse",
-        }
-    }
-}
+  },
+};
 export const Loader = () => {
   return (
     <motion.svg
-    key='loader'
+      key="loader"
       width="398"
       height="439"
       viewBox="0 0 398 439"
@@ -62,5 +62,3 @@ export const Loader = () => {
     </motion.svg>
   );
 };
-
-

@@ -77,7 +77,9 @@ const InfoDescription = ({ line }) => {
             transition: {
               delay: 1.5,
               duration: 0.1,
-              ease:"easeOut",type:'spring',stiffness:300
+              ease: "easeOut",
+              type: "spring",
+              stiffness: 300,
             },
           }}
         >

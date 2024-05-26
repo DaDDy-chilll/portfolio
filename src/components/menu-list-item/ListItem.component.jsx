@@ -3,19 +3,18 @@ import { Container } from "./ListItem.style";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-
 // eslint-disable-next-line react/prop-types, no-unused-vars
-const ListItem = ({ id, name,path }) => {
+const ListItem = ({ id, name, path }) => {
   const navigate = useNavigate();
   const { isOpen } = useSelector((state) => state.homeState);
-  const {pageTitle} = useSelector(state => state.pageInfo);
+  const { pageTitle } = useSelector((state) => state.pageInfo);
 
   const routeHandle = () => navigate(path);
   return (
     <Container
       as={motion.div}
       $name={name}
-      $active={pageTitle === name ? true:false}
+      $active={pageTitle === name ? true : false}
       initial={initialStyle(name)}
       animate={isOpen ? animationStyle(name) : exitStyle(name)}
       key={id}
@@ -191,7 +190,10 @@ const exitStyle = (name) => {
 };
 
 const clickStyle = () => {
-  return {scale:.8,transition:{duration:.2,type:"spring",satisfies:300}}
+  return {
+    scale: 0.8,
+    transition: { duration: 0.2, type: "spring", satisfies: 300 },
+  };
 };
 
 export default ListItem;

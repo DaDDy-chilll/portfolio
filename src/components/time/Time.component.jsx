@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 
 const Time = () => {
-  const {pageTitle} = useSelector(state => state.pageInfo);
+  const { pageTitle } = useSelector((state) => state.pageInfo);
 
   const [time, setTime] = useState("00:00");
   setInterval(() => TimeChnage(), 1000);
@@ -26,7 +26,7 @@ const Time = () => {
       animate={{ x: 0 }}
       transition={{ delay: 0.1, type: "spring", stiffness: 100 }}
       $name={pageTitle}
-      key='Time'
+      key="Time"
     >{`${time}`}</Wrapper>
   );
 };

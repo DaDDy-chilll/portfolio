@@ -6,7 +6,7 @@ const InfoContainer = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
-  
+
   h1 {
     font-family: "Honk", system-ui;
     font-size: 3rem;

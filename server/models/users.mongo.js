@@ -11,10 +11,10 @@ const userSchema = new mongoose.Schema(
     },
     email: {
       type: String,
-      required: [true, "please provide email"],
+      required: [true, "Please Provide Email"],
       validate: {
         validator: validator.isEmail,
-        message: "please provide valid email",
+        message: "Please provide a valid email",
       },
       unique: true,
     },
@@ -27,4 +27,4 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model('User',userSchema);
+module.exports = mongoose.model("User", userSchema);

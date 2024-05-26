@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Circl } from "./HomeCircle.style";
-import { TextCircle,IconContainer } from "@components";
+import { TextCircle, IconContainer } from "@components";
 
 motion;
 const HomeCircle = () => {
@@ -21,9 +21,21 @@ const HomeCircle = () => {
         }}
         exit={{ scale: 0, transition: { delay: 0.1 } }}
       >
-       <motion.span initial={{opacity:0}} whileHover={{opacity:1,transition:{duration:.5,ease:"easeIn",type:'spring',stiffness:300,when:"beforeChildren"}}}>
-       <TextCircle/>
-       </motion.span>
+        <motion.span
+          initial={{ opacity: 0 }}
+          whileHover={{
+            opacity: 1,
+            transition: {
+              duration: 0.5,
+              ease: "easeIn",
+              type: "spring",
+              stiffness: 300,
+              when: "beforeChildren",
+            },
+          }}
+        >
+          <TextCircle />
+        </motion.span>
       </motion.div>
       <IconContainer />
     </Circl>

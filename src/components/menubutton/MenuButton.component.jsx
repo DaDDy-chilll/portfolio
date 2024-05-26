@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { isMenuOpen } from "@store";
 
 const MenuButton = () => {
-  const {pageTitle} = useSelector(state => state.pageInfo);
+  const { pageTitle } = useSelector((state) => state.pageInfo);
   const disptach = useDispatch();
   const clickhandle = () => disptach(isMenuOpen());
 
@@ -16,7 +16,7 @@ const MenuButton = () => {
       transition={{ delay: 0.3, type: "spring", stiffness: 100 }}
       onClick={clickhandle}
       $name={pageTitle}
-      key='MenuButton'
+      key="MenuButton"
     >
       <div></div>
       <div></div>

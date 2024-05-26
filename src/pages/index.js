@@ -5,5 +5,4 @@ import Navigation from "./Navigation/Navigation";
 import Projects from "./Projects/Projects.page";
 import Skills from "./Skills/Skills.page";
 
-
-export {Home,About,Skills,Projects,Contact,Navigation}
+export { Home, About, Skills, Projects, Contact, Navigation };

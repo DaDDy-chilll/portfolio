@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Number } from "./PageNumber.style";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeInfo } from "@store";
 
 const PageNumber = () => {
-  const { pageNumber,pageTitle } = useSelector((state) => state.pageInfo);
+  const { pageNumber, pageTitle } = useSelector((state) => state.pageInfo);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const windowWidth = window.innerWidth / 2 - 71;

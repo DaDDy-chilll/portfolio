@@ -11,9 +11,11 @@ const List = styled.div`
   .skill_item {
     width: 100%;
     height: 100%;
-    background-color:${props => props.$isActive ? 'var(--primary-color)': 'var(--secondary-color)'} ;
+    background-color: ${(props) =>
+      props.$isActive ? "var(--primary-color)" : "var(--secondary-color)"};
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    border: ${props => props.$isActive ? '10px solid var(--secondary-color)': null};
+    border: ${(props) =>
+      props.$isActive ? "10px solid var(--secondary-color)" : null};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,12 +25,12 @@ const List = styled.div`
     position: relative;
     z-index: 10;
 
-    .icon{
+    .icon {
       width: 30%;
       z-index: 10;
       position: absolute;
       bottom: 30%;
-      svg{
+      svg {
         width: 100%;
         fill: white;
       }
@@ -45,8 +47,7 @@ const List = styled.div`
     &:hover p {
       color: var(--secondary-color);
       font-size: 2rem;
-      filter: drop-shadow( 0 0 10px black);
-
+      filter: drop-shadow(0 0 10px black);
     }
 
     &:hover {
@@ -55,10 +56,9 @@ const List = styled.div`
       transform: scale(1.1);
     }
 
-    &:active{
-      transform: scale(.9);
+    &:active {
+      transform: scale(0.9);
     }
-    
   }
 `;
 

@@ -70,5 +70,5 @@ const aboutState = createSlice({
   },
 });
 
-export const { menuOpen,downloadCV } = aboutState.actions;
+export const { menuOpen, downloadCV } = aboutState.actions;
 export default aboutState.reducer;

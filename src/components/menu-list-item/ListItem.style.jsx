@@ -14,7 +14,10 @@ const Container = styled.div`
   cursor: pointer;
   transition: all 0.2s;
   z-index: 10;
-  /* box-shadow: ${props => props.$name ? '0 10px 5px var(--primary-color)':'0 10px 5px var(--secondary-color)'}; */
+  /* box-shadow: ${(props) =>
+    props.$name
+      ? "0 10px 5px var(--primary-color)"
+      : "0 10px 5px var(--secondary-color)"}; */
 
   &:hover {
     background-color: white;

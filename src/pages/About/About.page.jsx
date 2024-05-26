@@ -8,11 +8,16 @@ const About = () => {
     <Container
       key="about"
       as={motion.div}
-      initial={{ scaleY:0, opacity: 0 }}
+      initial={{ scaleY: 0, opacity: 0 }}
       animate={{
         scaleY: 1,
         opacity: 1,
-        transition: { duration: .8, delay: 0.1, type: "tween", stiffness: 300 },
+        transition: {
+          duration: 0.8,
+          delay: 0.1,
+          type: "tween",
+          stiffness: 300,
+        },
       }}
       exit={{ y: "100%", opacity: 0, transition: { duration: 0.1 } }}
     >

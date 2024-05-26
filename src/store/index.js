@@ -5,10 +5,4 @@ import { skillActive } from "./features/skills";
 import { store } from "./features/store";
 
 export default store;
-export {
-    changeInfo,
-    isMenuOpen,
-    menuOpen,
-    downloadCV,
-    skillActive
-}
+export { changeInfo, isMenuOpen, menuOpen, downloadCV, skillActive };

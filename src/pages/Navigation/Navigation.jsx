@@ -1,8 +1,7 @@
 import { Outlet } from "react-router-dom";
-import { Navbar,MenuList } from "@components";
+import { Navbar, MenuList } from "@components";
 
 const Navigation = () => {
-
   return (
     <>
       <Navbar />

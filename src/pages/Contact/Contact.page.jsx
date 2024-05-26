@@ -26,7 +26,7 @@ const Contact = () => {
         <ContactSideTinySmallRight dir="right" />
       </ContactBackground>
 
-    <ContactForm />
+      <ContactForm />
     </>
   );
 };

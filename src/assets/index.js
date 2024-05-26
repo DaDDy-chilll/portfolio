@@ -8,7 +8,13 @@ import { AboutBackgroundImg } from "./img/AboutBackgroundImg";
 import { Loader } from "./img/Loader";
 import { LogoLeft } from "./img/LogoLeft";
 import { LogoRight } from "./img/LogoRight";
-import { BottomTriangle, CenterBlock, TopTriangle,WaveTwo,WaveOne } from "./img/skills";
+import {
+  BottomTriangle,
+  CenterBlock,
+  TopTriangle,
+  WaveTwo,
+  WaveOne,
+} from "./img/skills";
 
 import {
   HtmlIcon,
@@ -83,5 +89,5 @@ export {
   AiIcon,
   FirebaseIcon,
   WaveOne,
-  WaveTwo
+  WaveTwo,
 };

@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Madimi+One&family=Josefin+Sans&family=Honk&display=swap');
+
 :root {
-  --primary-color:white;
-  --secondary-color:#272727;
+  --primary-color: white;
+  --secondary-color: #272727;
 }
-*{
+
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   overflow: hidden;
   transition: all .2s;

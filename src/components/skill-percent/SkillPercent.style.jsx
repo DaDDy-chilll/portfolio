@@ -22,7 +22,7 @@ const Precent = styled.div`
     &:after {
       content: "";
       position: absolute;
-      top:${props => (45 - props.$activePrecent)}%; //change skill percent
+      top: ${(props) => 45 - props.$activePrecent}%; //change skill percent
       left: 50%;
       width: 200%;
       height: 200%;
@@ -56,7 +56,7 @@ const Precent = styled.div`
     top: 42%;
     font-family: "Monomaniac One", sans-serif;
     font-size: 2rem;
-    color: ${props => (45 - props.$activePrecent) <= -5 ? 'white' : 'black'};
+    color: ${(props) => (45 - props.$activePrecent <= -5 ? "white" : "black")};
   }
 `;
 export default Precent;

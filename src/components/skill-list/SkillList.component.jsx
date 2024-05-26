@@ -5,9 +5,9 @@ import { skillActive } from "@store";
 import { useDispatch } from "react-redux";
 
 /* eslint-disable react/prop-types */
-const SkillList = ({ name, top, left, id, isActive, icon,percent }) => {
+const SkillList = ({ name, top, left, id, isActive, icon, percent }) => {
   const dispatch = useDispatch();
-  const skillButton = () => dispatch(skillActive({name,percent}));
+  const skillButton = () => dispatch(skillActive({ name, percent }));
   return (
     <List
       key={id}
@@ -25,7 +25,7 @@ const SkillList = ({ name, top, left, id, isActive, icon,percent }) => {
           stiffness: 70,
         },
       }}
-    exit={{rotateY:180,opacity:0,transition:{duration:0.2}}}
+      exit={{ rotateY: 180, opacity: 0, transition: { duration: 0.2 } }}
     >
       <div className="skill_item" onClick={skillButton}>
         <motion.p
@@ -36,16 +36,20 @@ const SkillList = ({ name, top, left, id, isActive, icon,percent }) => {
               ? null
               : { y: 0, opacity: 1, transition: { duration: 0.5 } }
           }
-          exit={{ y: -100, opacity: 0,  transition: { duration: 0.5 } }}
+          exit={{ y: -100, opacity: 0, transition: { duration: 0.5 } }}
         >
           {name}
         </motion.p>
         <motion.span
           className="icon"
-          initial={ { y: -100, opacity: 0 }}
-          animate={isActive ? { y: 0, opacity: 1, transition: { duration: 0.5 }} :{ y: -100, opacity: 0 } }
+          initial={{ y: -100, opacity: 0 }}
+          animate={
+            isActive
+              ? { y: 0, opacity: 1, transition: { duration: 0.5 } }
+              : { y: -100, opacity: 0 }
+          }
           $isActive={isActive}
-          exit={{y:0,opacity:1,transition:{duration:.5}}}
+          exit={{ y: 0, opacity: 1, transition: { duration: 0.5 } }}
         >
           {icon}
         </motion.span>
