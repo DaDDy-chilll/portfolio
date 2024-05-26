@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion"
 import ContactStyle from "./ContactForm.style"
-import { useState } from "react"
-
+import { useState } from "react";
+import  validator from 'validator'
 const ContactForm = () => {
   const conatctForm = {
     uname:'',
@@ -16,7 +16,14 @@ const ContactForm = () => {
     setContact({...contact,[e.target.name]:e.target.value})
   }
 
-  console.log(contact);
+  const sendClick = () => {
+    if(!validator.isEmail(contact.mail)) {
+      alert('Please enter a valid email');
+    }else{
+      console.log(contact);
+    }
+  }
+
   return (
     <ContactStyle>
             <div className="contact_form">
@@ -94,6 +101,7 @@ const ContactForm = () => {
               },
             }}
             exit={{ y: 50, opacity: 0 }}
+            onClick={sendClick}
           >
             send
           </motion.button>
