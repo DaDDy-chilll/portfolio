@@ -16,7 +16,11 @@ const createMail = () => {
             pass:process.env.AUTH_PASS
         },
         tls:{
-            
+            rejectUnauthorized:true,
         }
     })
+
+    return transpoter;
 }
+
+module.exports = {createMail}
