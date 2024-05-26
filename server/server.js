@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+require('dotenv').config()
 const http = require("http");
 const express = require("express");
 const cors = require("cors");
@@ -6,7 +7,7 @@ const morgan = require("morgan");
 const api = require("./routes/api");
 const app = express();
 const server = http.createServer(app);
-const PORT = 3000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors({ origin: "http://localhost:5173", methods: ["GET"] }));
 app.use(morgan("dev"));
