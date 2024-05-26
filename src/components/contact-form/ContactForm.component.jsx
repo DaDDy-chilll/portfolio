@@ -1,7 +1,22 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion"
 import ContactStyle from "./ContactForm.style"
+import { useState } from "react"
 
 const ContactForm = () => {
+  const conatctForm = {
+    uname:'',
+    mail:'',
+    comment:'',
+  }
+
+  const [contact,setContact] = useState(conatctForm)
+
+  const changeHandle = (e) => {
+    setContact({...contact,[e.target.name]:e.target.value})
+  }
+
+  console.log(contact);
   return (
     <ContactStyle>
             <div className="contact_form">
@@ -22,6 +37,8 @@ const ContactForm = () => {
               },
             }}
             exit={{ y: 50, opacity: 0 }}
+            value={contact.uname}
+            onChange={e => changeHandle(e)}
           />
           <motion.input
             type="email"
@@ -40,6 +57,8 @@ const ContactForm = () => {
               },
             }}
             exit={{ y: 50, opacity: 0 }}
+            value={contact.mail}
+            onChange={e => changeHandle(e)}
           />
           <motion.textarea
             type="text"
@@ -58,6 +77,8 @@ const ContactForm = () => {
               },
             }}
             exit={{ y: 50, opacity: 0 }}
+            value={contact.comment}
+            onChange={e => changeHandle(e)}
           ></motion.textarea>
           <motion.button
             type="submit"
