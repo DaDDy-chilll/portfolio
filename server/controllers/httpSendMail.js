@@ -4,6 +4,7 @@ const User = require("../models/users.mongo");
 
 const httpSendMail = async (req, res) => {
   const { uname, email, comment } = req.body;
+  console.log(req.body);
   if (!uname || !email || !comment)
     return res.status(400).json({ error: "missing input value!" });
   console.log(uname, email, comment);

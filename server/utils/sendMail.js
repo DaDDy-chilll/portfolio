@@ -8,7 +8,7 @@ const sendMail = (user) => {
     from: "mr.paingsettkyaw@gmail.com",
     to: user.email,
     subject: "Thanks for contact me.",
-    html: `<p>hello world</p>`,
+    html: `<p>${user.comment}</p>`,
   };
 
   mail.sendMail(mailOptions, (error, info) => {
