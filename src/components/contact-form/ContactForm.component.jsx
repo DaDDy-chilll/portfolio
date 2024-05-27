@@ -7,7 +7,6 @@ import validator from "validator";
 import axios from "axios";
 const API = import.meta.env.VITE_API;
 
-
 const ContactForm = () => {
   const conatctForm = {
     uname: "",
@@ -16,33 +15,33 @@ const ContactForm = () => {
   };
 
   const [contact, setContact] = useState(conatctForm);
-  const [loading,setLoading] = useState(true)
-  const [response,setResponse] = useState(null)
+  const [loading, setLoading] = useState(false);
+  const [response, setResponse] = useState(null);
   const changeHandle = (e) => {
     setContact({ ...contact, [e.target.name]: e.target.value });
   };
 
   const contactFetch = async () => {
-     const res= await axios.post(`${API}/api/v1/mail/send`,contact);
-     console.log(res);
-     console.log(res.data);
-     setResponse(res.data)
-  }
+    const res = await axios.post(`${API}/api/v1/mail/send`, contact);
+    console.log(res);
+    console.log(res.data);
+    if (res.status === 200) {
+      setResponse(res.data);
+      setLoading(false);
+    }
+  };
 
   const sendClick = async () => {
     if (!validator.isEmail(contact.email)) {
       alert("Please enter a valid email");
     } else {
-
-      contactFetch()
-      console.log(response);
+      setLoading(true);
+      contactFetch();
     }
   };
 
- 
-
   return (
-    <ContactStyle>
+    <ContactStyle $loading={loading}>
       <div className="contact_form">
         <motion.input
           type="text"
@@ -119,7 +118,9 @@ const ContactForm = () => {
           }}
           exit={{ y: 50, opacity: 0 }}
           onClick={sendClick}
+          disabled={loading}
         >
+          {loading && <img src="src\assets\img\Loading.gif" width="15%" />}
           send
         </motion.button>
       </div>
@@ -129,28 +130,26 @@ const ContactForm = () => {
 
 export default ContactForm;
 
-
-
 // config
-// : 
+// :
 // {transitional: {…}, adapter: Array(2), transformRequest: Array(1), transformResponse: Array(1), timeout: 0, …}
 // data
-// : 
+// :
 // success
-// : 
+// :
 // "Successful send mail."
 // [[Prototype]]
-// : 
+// :
 // Object
 // headers
-// : 
+// :
 // AxiosHeaders {content-length: '35', content-type: 'application/json; charset=utf-8'}
 // request
-// : 
+// :
 // XMLHttpRequest {onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}
 // status
-// : 
+// :
 // 200
 // statusText
-// : 
+// :
 // "OK"

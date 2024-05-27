@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
 const ContactStyle = styled.div`
   height: 100vh;
@@ -44,19 +44,33 @@ const ContactStyle = styled.div`
     }
 
     button {
+      width: 30%;
       font-size: 1.7rem;
       text-transform: uppercase;
       font-family: "Monomaniac One", sans-serif;
       letter-spacing: 2px;
-      padding: 0 10%;
       cursor: pointer;
       background-color: white;
       border: none;
       transition: all 0.1s;
 
-      &:hover {
-        animation: sendBtn 1s ease-out infinite alternate-reverse;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-right: 5%;
       }
+
+      ${(props) => {
+        if (!props.$loading) {
+          return css`
+            &:hover {
+              animation: sendBtn 1s ease-out infinite alternate-reverse;
+            }
+          `;
+        }
+      }}
 
       @keyframes sendBtn {
         from {
