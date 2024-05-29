@@ -1,11 +1,4 @@
-/* eslint-disable no-undef */
-const { createMail } = require("./createMail");
-
-const sendMail = (user) => {
-  const mail = createMail();
-  //! Mail Template
-  const mailTemplate = `
-  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html
   dir="ltr"
   xmlns="http://www.w3.org/1999/xhtml"
@@ -1209,22 +1202,3 @@ const sendMail = (user) => {
     </div>
   </body>
 </html>
-
-  `
-  const mailOptions = {
-    from: "mr.paingsettkyaw@gmail.com",
-    to: user.email,
-    subject: "Thanks for contact me.",
-    html: mailTemplate,
-  };
-
-  mail.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Email sent: " + info.response);
-    }
-  });
-};
-
-module.exports = { sendMail };
