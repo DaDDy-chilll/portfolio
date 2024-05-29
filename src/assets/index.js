@@ -47,6 +47,7 @@ import {
   ContactSideTinySmallLeft,
   ContactSideTinySmallRight,
 } from "./img/contact";
+import AlertImg from "./img/AlertImg";
 
 export {
   LOGO,
@@ -90,4 +91,5 @@ export {
   FirebaseIcon,
   WaveOne,
   WaveTwo,
+  AlertImg,
 };

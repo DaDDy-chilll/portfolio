@@ -13,6 +13,7 @@ import SkillBackground from "./skill-background/SkillBackground.component";
 import SkillsContainer from "./skills-container/SkillsContainer.component";
 import SkillPercent from "./skill-percent/SkillPercent.component";
 import ContactForm from "./contact-form/ContactForm.component";
+import Alert from "./alert/Alert.component";
 
 export {
   Navbar,
@@ -30,4 +31,5 @@ export {
   SkillsContainer,
   SkillPercent,
   ContactForm,
+  Alert
 };
