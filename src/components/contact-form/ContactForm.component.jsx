@@ -5,8 +5,11 @@ import ContactStyle from "./ContactForm.style";
 import { useState } from "react";
 import validator from "validator";
 import axios from "axios";
+import { openAlert } from "@store";
+import { useDispatch } from "react-redux";
 const API = import.meta.env.VITE_API;
 
+openAlert;
 const ContactForm = () => {
   const conatctForm = {
     uname: "",
@@ -16,24 +19,40 @@ const ContactForm = () => {
 
   const [contact, setContact] = useState(conatctForm);
   const [loading, setLoading] = useState(false);
-  const [response, setResponse] = useState(null);
+  // const [response, setResponse] = useState(null);
+  const dispatch = useDispatch();
+
   const changeHandle = (e) => {
     setContact({ ...contact, [e.target.name]: e.target.value });
   };
 
   const contactFetch = async () => {
-    const res = await axios.post(`${API}/api/v1/mail/send`, contact);
-    console.log(res);
-    console.log(res.data);
-    if (res.status === 200) {
-      setResponse(res.data);
-      setLoading(false);
+    const response = await axios
+      .post(`${API}/api/v1/mail/send`, contact)
+      .catch((error) => error);
+    console.log(response);
+    if (response && response.status === 200) {
+      dispatch(openAlert({ comment: response.data.message, type: "success" }));
+    } else {
+      if (response.response && response.response.status === 500) {
+        dispatch(
+          openAlert({
+            comment: `${response.response.statusText}. Please Try Again Later.`,
+            type: "error",
+          })
+        );
+      } else {
+        dispatch(openAlert({ comment: response.message, type: "error" }));
+      }
     }
+    setLoading(false);
   };
 
   const sendClick = async () => {
     if (!validator.isEmail(contact.email)) {
-      alert("Please enter a valid email");
+      dispatch(
+        openAlert({ comment: "Please enter a valid email", type: "error" })
+      );
     } else {
       setLoading(true);
       contactFetch();

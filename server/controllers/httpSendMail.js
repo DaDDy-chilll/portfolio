@@ -15,9 +15,9 @@ const httpSendMail = async (req, res) => {
       comment,
     });
     sendMail(user);
-    res.status(200).json({ success: "Successful send mail." });
+    res.status(200).json({ message: "Successful send mail." });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ message: error.message });
   }
 };
 

@@ -10,6 +10,31 @@ const AlertStyle = styled.div`
   .alert_container {
     position: relative;
 
+    &::after {
+      content: "";
+      width: 85%;
+      height: 3px;
+      background-color: ${(props) =>
+        props.$alertType === "success" ? "#2cf562" : "red"};
+      position: absolute;
+      top: 2%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 50px;
+      animation: AlertCountBar 3s linear 0.1s alternate forwards;
+    }
+
+    @keyframes AlertCountBar {
+      from {
+        width: 85%;
+      }
+
+      to {
+        width: 0;
+        display: none;
+      }
+    }
     p {
       position: absolute;
       top: 0;
@@ -25,17 +50,17 @@ const AlertStyle = styled.div`
       white-space: nowrap;
     }
 
-    .close_btn{
-        position: absolute;
-        right: 2%;
-        top: 10%;
-        color: white;
-        font-size: 1.7rem;
-        cursor: pointer;
+    .close_btn {
+      position: absolute;
+      right: 2%;
+      top: 5%;
+      color: white;
+      font-size: 1.7rem;
+      cursor: pointer;
 
-        &:hover{
-            color: gray;
-        }
+      &:hover {
+        color: gray;
+      }
     }
   }
 `;
