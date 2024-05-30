@@ -19,7 +19,6 @@ const ContactForm = () => {
 
   const [contact, setContact] = useState(conatctForm);
   const [loading, setLoading] = useState(false);
-  // const [response, setResponse] = useState(null);
   const dispatch = useDispatch();
 
   const changeHandle = (e) => {
@@ -31,29 +30,29 @@ const ContactForm = () => {
       .post(`${API}/api/v1/mail/send`, contact)
       .catch((error) => error);
     console.log(response);
-    if (response && response.status === 200) {
+    if (response && response.status === 200)
       dispatch(openAlert({ comment: response.data.message, type: "success" }));
-    } else {
-      if (response.response && response.response.status === 500) {
+    else {
+      if (response.response && response.response.status === 500)
         dispatch(
           openAlert({
             comment: `${response.response.statusText}. Please Try Again Later.`,
             type: "error",
           })
         );
-      } else {
-        dispatch(openAlert({ comment: response.message, type: "error" }));
-      }
+      else dispatch(openAlert({ comment: response.message, type: "error" }));
     }
     setLoading(false);
   };
 
   const sendClick = async () => {
-    if (!validator.isEmail(contact.email)) {
+    if (!contact.uname || !contact.email || !contact.comment)
+      dispatch(openAlert({ comment: "Please fill all input", type: "error" }));
+    else if (!validator.isEmail(contact.email))
       dispatch(
         openAlert({ comment: "Please enter a valid email", type: "error" })
       );
-    } else {
+    else {
       setLoading(true);
       contactFetch();
     }
