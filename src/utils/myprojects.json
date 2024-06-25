@@ -1,0 +1,354 @@
+[
+    {
+        "id": 1,
+        "name": "shoppie",
+        "image": "shoppie",
+        "github": "https://github.com/who-0/shoppie",
+        "live": "https://shoppie-gqvo.onrender.com/",
+        "language": [
+            "react",
+            "node",
+            "express",
+            "mongodb"
+        ],
+        "description": "Mini online shop website.",
+        "explain": "The products to be sold must be displayed for online shops. From the user's side, you must be able to place an order for products. When you place an order, you must signup and then place the order. I will ask for the contact ph no. As an admin, you can confirm, cancel, and pending orders, add, delete, and update user accounts, and add, delete, and update products as you like."
+    },
+    {
+        "id": 2,
+        "name": "robot friends",
+        "image": "robot",
+        "github": "https://github.com/DaDDy-chilll/myrobotsfriend",
+        "live": "https://daddy-chilll.github.io/myrobotsfriend/",
+        "language": [
+            "react",
+            "Robots API"
+        ],
+        "description": "Show json data with React",
+        "explain": "Get json data from Robots api and show card design with react. You can search by card name from search."
+    },
+    {
+        "id": 3,
+        "name": "newsletter",
+        "image": "newsletter",
+        "github": "https://github.com/who-0/newsletter",
+        "live": "https://newsletter-c3an.onrender.com/",
+        "language": [
+            "ejs",
+            "node",
+            "express",
+            "mongodb"
+        ],
+        "description": "Show json data with React",
+        "explain": "From the user side, you must be able to subscribe by email, from the admin side, you must be able to view the emails, collect the mails and store them in the db."
+    },
+    {
+        "id": 4,
+        "name": "to do list",
+        "image": "todo",
+        "github": "https://github.com/who-0/todoapp",
+        "live": "https://todoapp-y9wf.onrender.com",
+        "language": [
+            "ejs",
+            "nodejs",
+            "express",
+            "mongodb",
+            "jwt"
+        ],
+        "description": "Note to do list for each user who did signup",
+        "explain": "You can save user signup and to do list. Access the mongodb database and mark it for a user. You must log in again and view it whenever you like."
+    },
+    {
+        "id": 5,
+        "name": "oauth signup form",
+        "image": "oauth",
+        "github": "https://github.com/who-0/Oauth",
+        "live": "https://oauth-h3cg.onrender.com/",
+        "language": [
+            "ejs",
+            "nodejs",
+            "express",
+            "mongodb",
+            "jwt",
+            "passport"
+        ],
+        "description": "Users can signup email or google or github.",
+        "explain": "The login system must be signup or login with mail or google acc or github acc"
+    },
+    {
+        "id": 6,
+        "name": "mysql signup form",
+        "image": "mysql",
+        "github": "https://github.com/DaDDy-chilll/node-mysql-login",
+        "live": "https://node-mysql-login-zvs7.onrender.com",
+        "language": [
+            "hbs",
+            "nodejs",
+            "express",
+            "mysql",
+            "jwt"
+        ],
+        "description": "User Signup Form with mysql data",
+        "explain": "The login system is made using mysql database."
+    },
+    {
+        "id": 7,
+        "name": "weather",
+        "image": "weather",
+        "github": "https://github.com/DaDDy-chilll/proxy-server",
+        "live": "https://proxyserver-08yd.onrender.com/",
+        "language": [
+            "nodejs",
+            "express",
+            "apicach",
+            "express rate limit"
+        ],
+        "description": "The Weather App is real time weather which weather get from Open Weather Api.",
+        "explain": "The weather app has set a rate limit from the backend. You can request only 10 times. If you exceed it, you have to wait again. Because the route is cached, making requests will be faster."
+    },
+    {
+        "id": 8,
+        "name": "Two Factor Authentication",
+        "image": "2fa",
+        "github": "https://github.com/DaDDy-chilll/2FA",
+        "live": "https://twofa-lscw.onrender.com",
+        "language": [
+            "ejs",
+            "nodejs",
+            "express",
+            "mongodb",
+            "speakeasy"
+        ],
+        "description": "The Login with Two Factor Authentication as like Google Authenticator, Any Authenticator.",
+        "explain": " I'm going to signup, I have to do Two Factor. You must login again with the Two Factor code. Made more secure."
+    },
+    {
+        "id": 9,
+        "name": "Verify Mail",
+        "image": "verifymail",
+        "github": "https://github.com/DaDDy-chilll/nodemailer",
+        "live": "https://nodemailer-x5ur.onrender.com/",
+        "language": [
+            "reactjs",
+            "nodejs",
+            "express",
+            "mongodb",
+            "jwt",
+            "node mailer"
+        ],
+        "description": "User can login & Signup and then server sended to verify email and confirm with link.",
+        "explain": " User signup will be done by email and the server will verify the email by verifying the email. If it is correct, the user account will be verified."
+    },
+    {
+        "id": 10,
+        "name": "image uploader",
+        "image": "upload",
+        "github": "https://github.com/DaDDy-chilll/multer-image-upload",
+        "live": "https://image-uploader-dawe.onrender.com",
+        "language": [
+            "ejs",
+            "nodejs",
+            "express",
+            "mongodb",
+            "multer"
+        ],
+        "description": "Upload image only ( jpeg, png, jpg) , store to mongodb,  can view uploaded image.",
+        "explain": "The user should be able to upload the image and access it from the given url whenever he likes. The image is stored using the mongodb database"
+    },
+    {
+        "id": 11,
+        "name": "qr generator",
+        "image": "qrcode",
+        "github": "https://github.com/DaDDy-chilll/qrcode",
+        "live": "https://qrcode-bzya.onrender.com/",
+        "language": [
+            "ejs",
+            "nodejs",
+            "express",
+            "qrcode"
+        ],
+        "description": " User can generate qr code from any url if user wants",
+        "explain": "After entering the user, the url will be changed back to the qr code, and the qr code will be returned from the server using the qr code module."
+    },
+    {
+        "id": 12,
+        "name": "currency exchanger",
+        "image": "currency",
+        "github": "https://github.com/DaDDy-chilll/exchange",
+        "live": "http://daddy-chilll.github.io/exchange/",
+        "language": [
+            "html",
+            "css",
+            "js",
+            "api"
+        ],
+        "description": "Users can change any country currency and compare other currencies.",
+        "explain": "Get currencies data from Exchange API and show it back."
+    },
+    {
+        "id": 13,
+        "name": "CinemaCraze",
+        "image": "cinema",
+        "github": "https://github.com/ExBrain-B13-Group-1/CinemaCraze",
+        "live": "https://cinemacraze.onrender.com",
+        "language": [
+            "html",
+            "css",
+            "jquery"
+        ],
+        "description": "This Cinema website is  a institute group projects, I create payment section",
+        "explain": "Online movie booking has been made."
+    },
+    {
+        "id": 14,
+        "name": "pig game",
+        "image": "piggame",
+        "github": "https://github.com/DaDDy-chilll/pig-game",
+        "live": "https://daddy-chilll.github.io/pig-game/",
+        "language": [
+            "html",
+            "css",
+            "js"
+        ],
+        "description": "Game Web App",
+        "explain": "Pig Game is two player each round roll the dice and greater than 100 is the winner who is the first"
+    },
+    {
+        "id": 15,
+        "name": "Minesweeper",
+        "image": "boom",
+        "github": "https://github.com/DaDDy-chilll/minesweeper",
+        "live": "https://daddy-chilll.github.io/minesweeper/",
+        "language": [
+            "html",
+            "css",
+            "js"
+        ],
+        "description": "Game Web App",
+        "explain": "The Minesweeper game’s cells have three states: unopened, opened and flagged. An unopened cell is blank and clickable, while an opened cell is exposed. Flagged cells are those marked by the player to indicate a potential mine location"
+    },
+    {
+        "id": 16,
+        "name": "Guess Number",
+        "image": "guessnumber",
+        "github": "https://github.com/DaDDy-chilll/guessmynumber",
+        "live": "https://daddy-chilll.github.io/guessmynumber/",
+        "language": [
+            "html",
+            "css",
+            "js"
+        ],
+        "description": "Game Web App",
+        "explain": "guest number game, this game is a guess hiding number between 1 and 20."
+    },
+    {
+        "id": 17,
+        "name": "math quiz",
+        "image": "mathquiz",
+        "github": "https://github.com/DaDDy-chilll/math-quiz",
+        "live": "https://daddy-chilll.github.io/math-quiz/",
+        "language": [
+            "html",
+            "css",
+            "js"
+        ],
+        "description": "Math quiz game",
+        "explain": "The math quiz game is about choosing the right answer in three cells"
+    },
+    {
+        "id": 18,
+        "name": "Movie Addict",
+        "image": "moive",
+        "github": "https://github.com/DaDDy-chilll/movie-addict",
+        "live": "https://daddy-chilll.github.io/movie-addict/",
+        "language": [
+            "html",
+            "css"
+        ],
+        "description": "Movie Style web app",
+        "explain": "The front-end design for the movie page."
+    },
+    {
+        "id": 19,
+        "name": "Dreaming ",
+        "image": "dreaming",
+        "github": "https://github.com/DaDDy-chilll/dreaming",
+        "live": "https://daddy-chilll.github.io/dreaming/",
+        "language": [
+            "html",
+            "css"
+        ],
+        "description": "UI Style web app",
+        "explain": "The front-end design"
+    },
+    {
+        "id": 20,
+        "name": "Flex Panel ",
+        "image": "variable",
+        "github": "https://github.com/DaDDy-chilll/flex-panel",
+        "live": "https://daddy-chilll.github.io/flex-panel/",
+        "language": [
+            "html",
+            "css",
+            "js"
+        ],
+        "description": "css flex",
+        "explain": "The Flex panel Design"
+    },
+    {
+        "id": 21,
+        "name": "CSS Variable",
+        "image": "cssvvariable",
+        "github": "https://github.com/DaDDy-chilll/css-variable",
+        "live": "https://daddy-chilll.github.io/css-variable/",
+        "language": [
+            "html",
+            "css",
+            "js"
+        ],
+        "description": "css variable",
+        "explain": "Can value Image update style"
+    },
+    {
+        "id": 22,
+        "name": "Drum Kit",
+        "image": "drum",
+        "github": "https://github.com/DaDDy-chilll/drumkit-js30",
+        "live": "https://daddy-chilll.github.io/drumkit-js30/",
+        "language": [
+            "html",
+            "css",
+            "js"
+        ],
+        "description": "Keyboard Event",
+        "explain": "Click Key event and get the sound"
+    },
+    {
+        "id": 23,
+        "name": "Clock",
+        "image": "clock",
+        "github": "https://github.com/DaDDy-chilll/cssjsclock",
+        "live": "https://daddy-chilll.github.io/cssjsclock/",
+        "language": [
+            "html",
+            "css",
+            "js"
+        ],
+        "description": "CSS js clcok",
+        "explain": "Style of clock"
+    },
+    {
+        "id": 24,
+        "name": "calculator",
+        "image": "calculator",
+        "github": "https://github.com/DaDDy-chilll/calculator",
+        "live": "https://daddy-chilll.github.io/calculator/",
+        "language": [
+            "html",
+            "css",
+            "js"
+        ],
+        "description": "calcuator design",
+        "explain": "Style of calculator"
+    }
+]

@@ -1,30 +1,21 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { Container, BackGround } from "./Projects.style";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-const projects = [
-  {
-    id: 1,
-    name: "shoppie",
-    image: "shoppie",
-    github: "https://github.com/who-0/shoppie",
-    live: "https://shoppie-gqvo.onrender.com/",
-    language: ["react", "node", "express", "mongodb"],
-    description: "Mini online shop website.",
-    explain:""
-  },
-  {
-    id: 2,
-    name: "robot friends",
-    image: "robot",
-    github: "https://github.com/DaDDy-chilll/myrobotsfriend",
-    live: "https://newsletter-c3an.onrender.com/",
-    language: ["react", "Robots API"],
-    description: "Get json data from Robots Api and display with React",
-  },
-];
+
 
 const Projects = () => {
+  const [projects,setProjects] = useState([])
+  useEffect( () => {
+   const fecthProjects = async() => {
+    const res = await axios.get('/src/utils/myprojects.json')
+    setProjects(res.data)
+   }
+   fecthProjects();
+  },[])
+
   return (
     <>
       <BackGround
@@ -35,35 +26,16 @@ const Projects = () => {
       />
       <Container>
         <div className="project_card_conatiner">
-        <div className="project_card">
-          
-          </div>
-
           <div className="project_card">
-          
+            <img src="/src/assets/img/projects/icon/shoppie.png" width='40%' />
+            <p className="title">shoppie</p>
+            <div className="tools">
+              <p>react</p>
+              <p>node</p>
+              <p>express</p>
+              <p>mongodb</p>
+            </div>
           </div>
-
-          <div className="project_card">
-          
-          </div>
-
-          <div className="project_card">
-          
-          </div>
-
-          <div className="project_card">
-          
-          </div>
-          <div className="project_card">
-          
-          </div>
-          <div className="project_card">
-          
-          </div>
-          <div className="project_card">
-          
-          </div>
-
         </div>
       </Container>
     </>
