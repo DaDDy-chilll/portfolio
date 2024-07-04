@@ -24,34 +24,68 @@ const Container = styled.div`
       margin: 1%;
       position: relative;
       color: white;
-
+      transition: all 0.2s;
+      border: 2px solid var(--secondary-color);
+      cursor: pointer;
+      
       &:nth-child(even) {
         margin-top: 7%;
       }
 
-      img{
-        margin: 10% 0 0 5%;
+      &:hover {
+        background-color: var(--primary-color);
+
+         .title {
+          color: var(--secondary-color);
+         }
+
+         .tools{
+          p{
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+          }
+         }
       }
-      
+
+      img {
+        /* margin: 15% 0 0 5%; */
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        user-select: none;
+      }
+
       .title {
         position: absolute;
-        top: 2%;
+        top: 5%;
         right: 5%;
         font-family: "Monomaniac One", sans-serif;
         text-transform: capitalize;
-        font-size: 2rem;
+        font-size: 1.4rem;
         margin: 0;
+        font-weight: bold;
       }
 
-      .tools{
+      .tools {
         display: flex;
         justify-content: center;
         align-items: end;
         flex-direction: column;
-        background-color: red;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
 
-        p{
-          margin: 0;
+        p {
+          margin: 5% 0;
+          background-color: white;
+          color: var(--secondary-color);
+          border-radius: 50px;
+          border-radius: 50px;
+          padding: 2px 10px;
+          font-size: 1.1rem;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          text-transform: capitalize;
+          user-select: none;
         }
       }
     }

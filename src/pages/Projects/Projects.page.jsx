@@ -4,17 +4,19 @@ import { Container, BackGround } from "./Projects.style";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-
-
 const Projects = () => {
-  const [projects,setProjects] = useState([])
-  useEffect( () => {
-   const fecthProjects = async() => {
-    const res = await axios.get('/src/utils/myprojects.json')
-    setProjects(res.data)
-   }
-   fecthProjects();
-  },[])
+  const [projects, setProjects] = useState([]);
+  const [isCardOpen, setIsCardOpen] = useState(false);
+  useEffect(() => {
+    const fecthProjects = async () => {
+      const res = await axios.get("/src/utils/myprojects.json");
+      setProjects(res.data);
+    };
+    fecthProjects();
+  }, []);
+
+  const cardOpen = () => setIsCardOpen(!isCardOpen)
+
 
   return (
     <>
@@ -26,16 +28,23 @@ const Projects = () => {
       />
       <Container>
         <div className="project_card_conatiner">
-          <div className="project_card">
-            <img src="/src/assets/img/projects/icon/shoppie.png" width='40%' />
-            <p className="title">shoppie</p>
-            <div className="tools">
-              <p>react</p>
-              <p>node</p>
-              <p>express</p>
-              <p>mongodb</p>
+          {projects.map((pj) => (
+            <div className="project_card" key={pj.id} onClick={cardOpen}>
+              <img
+                src={`/src/assets/img/projects/icon/${pj.image}.png`}
+                width="30%"
+              />
+              <p className="title">{pj.name}</p>
+              <div className="tools">
+                {pj.language[0] && <p>{pj.language[0]}</p>}
+                {pj.language[1] && <p>{pj.language[1]}</p>}
+                {pj.language[2] && <p>{pj.language[2]}</p>}
+                {pj.language[3] && <p>{pj.language[3]}</p>}
+                {pj.language[4] && <p>{pj.language[4]}</p>}
+                {pj.language[5] && <p>{pj.language[5]}</p>}
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </Container>
     </>

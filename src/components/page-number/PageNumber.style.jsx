@@ -36,7 +36,8 @@ const Number = styled.div`
         if (
           props.$name === "about" ||
           props.$name === "skills" ||
-          props.$name === "contact"
+          props.$name === "contact" ||
+          props.$name === "projects"
         ) {
           return css`
             color: var(--primary-color);
@@ -54,7 +55,8 @@ const Number = styled.div`
         if (
           props.$name === "about" ||
           props.$name === "skills" ||
-          props.$name === "contact"
+          props.$name === "contact" ||
+          props.$name === "projects"
         ) {
           return css`
             background-color: var(--primary-color);
@@ -70,7 +72,8 @@ const Number = styled.div`
           if (
             props.$name === "about" ||
             props.$name === "skills" ||
-            props.$name === "contact"
+            props.$name === "contact" ||
+            props.$name === "projects"
           ) {
             return css`
               color: var(--secondary-color);

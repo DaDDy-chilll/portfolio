@@ -258,7 +258,7 @@
     {
         "id": 18,
         "name": "Movie Addict",
-        "image": "moive",
+        "image": "movie",
         "github": "https://github.com/DaDDy-chilll/movie-addict",
         "live": "https://daddy-chilll.github.io/movie-addict/",
         "language": [
@@ -298,7 +298,7 @@
     {
         "id": 21,
         "name": "CSS Variable",
-        "image": "cssvvariable",
+        "image": "cssvariable",
         "github": "https://github.com/DaDDy-chilll/css-variable",
         "live": "https://daddy-chilll.github.io/css-variable/",
         "language": [
