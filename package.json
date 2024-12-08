@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "setup-server":"cd server && npm install",
+    "setup-client":"npm install",
     "start-server":"npm start --prefix server",
-    "build": " vite build &&  npm run setup-server",
+    "build": "npm run setup-client && vite build &&  npm run setup-server",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start":  "concurrently --kill-others-on-fail \"npm run start-server\" \"npm run preview\""
