@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cd server && npm install",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview --host",
+    "setup-server":"cd server && npm install",
     "start-server":"npm start --prefix server",
+    "build": "concurrently --kill-others-on-fail \"vite build\"  \"npm run setup-server\"",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
     "start":  "concurrently --kill-others-on-fail \"npm run start-server\" \"npm run preview\""
   },
   "dependencies": {
