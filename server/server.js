@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 require("dotenv").config();
+const path = require("path");
 const http = require("http");
 const express = require("express");
 const cors = require("cors");
@@ -13,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({ origin: "http://localhost:5173", methods: ["GET"] }));
 app.use(morgan("dev"));
 app.use(express.json());
-
+app.use(express.static(path.resolve(__dirname,"..", "dist")));
 app.use("/api/v1", api);
 app.get("*", (req, res) => {
   res.send("route doesn't defined.");
